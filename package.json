@@ -1,6 +1,7 @@
 {
   "name": "av2-portfolio",
   "version": "1.0.0",
+  "author": "Alison Vandromme",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -11,8 +12,14 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/vercel-builder": "^0.21.3",
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2",
+    "consola": "^2.15.3",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "fibers": "^5.0.0",
+    "nuxt": "^2.15.7",
+    "sass": "^1.35.2",
+    "sass-loader": "^10.1.1"
   },
   "devDependencies": {}
 }
