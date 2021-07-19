@@ -1,2 +1,11 @@
-@import "~bootstrap";
+@import 'bootstrap/scss/bootstrap.scss';
 
+@import 'variables';
+@import 'titles';
+@import 'base';
+@import 'buttons';
+@import 'sidenav';
+@import 'links';
+@import 'text';
+@import 'form';
+@import 'transitions';

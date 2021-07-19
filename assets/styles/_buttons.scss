@@ -1,0 +1,13 @@
+button {
+  border: 2px solid $primary-color;
+  background-color: transparent;
+  color: $primary-color!important;
+  font-size: 1.8rem;
+  width: 23.3rem;
+  height: 5.5rem;
+  font-weight: 700;
+  &:hover {
+      background-color: $primary-color;
+      color: $light-color!important;
+  }
+}

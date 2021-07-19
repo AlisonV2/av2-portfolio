@@ -1,0 +1,10 @@
+html {
+  font-size: 10px!important; // 1rem = 10px
+}
+
+body {
+  background: url('../images/dark-background.svg') no-repeat center center fixed;
+  background-size: cover;
+  color: $light-color;
+  font-family: $default-font;
+}

@@ -1,0 +1,56 @@
+{
+  "path": {
+      "home": "Accueil",
+      "about": "A propos",
+      "projects": "Projets",
+      "contact": "Contact"
+  },
+  "landing": {
+      "hi": "Bonjour",
+      "im": "Je suis",
+      "webdev": "Développeur web",
+      "subtitle": "Développeur Front-End/Développeur Back-End",
+      "btn": "Me contacter"
+  },
+  "about": {
+      "pretitle": "A propos",
+      "title": "Moi en bref",
+      "description": "Je suis une licorne avec des pouvoirs magiques, Mon style est épileptique. Je suis une licorne avec une crinière swagguée, Elle est douce comme Beyoncé",
+      "btn": "Mes projets"
+  },
+  "projects": {
+      "pretitle": "A la une",
+      "title": "Mon project uno",
+      "description": "Je suis une licorne avec des pouvoirs magiques, Mon style est épileptique. Je suis une licorne avec une crinière swagguée, Elle est douce comme Beyoncé",
+      "live": "Lien Direct",
+      "back": "Retour aux projets"
+  },
+  "contact": {
+      "title": "Me contacter",
+      "description": "Si vous souhaitez me contacter concernant un projet ou pour toute autre question, vous pouvez m'envoyer un e-mail à",
+      "btn": "Envoyer",
+      "snack": {
+          "close": "Fermer",
+          "msg": "Message envoyé!"
+      },
+      "form": {
+          "name": "Nom",
+          "email": "Email",
+          "msg": "Message",
+          "rules": {
+              "name": {
+                  "req": "Veuillez indiquer votre nom",
+                  "length": "Le champ doit contenir au minimum 10 caractères"
+              },
+              "email": {
+                  "req": "Veuillez indiquer un email",
+                  "valid": "L'adresse e-mail n'est pas valide"
+              },
+              "message": {
+                  "req": "Veuillez entrer un message",
+                  "length": "Le champ doit contenir au minimum 10 caractères"
+              }
+          }
+      }
+  }
+}
