@@ -1,5 +1,10 @@
 <template>
-  <Tutorial/>
+
+<Container>
+  <Row>
+    <h1>Test</h1>
+  </Row>
+  </Container>
 </template>
 
 <script>
