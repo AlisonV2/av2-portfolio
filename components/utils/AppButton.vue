@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "AppButton",
+  name: "AButton",
   props: {
     btnClass: {
       type: String,

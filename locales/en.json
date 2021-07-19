@@ -1,0 +1,56 @@
+{
+  "path": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+  },
+  "landing": {
+      "hi": "Hi",
+      "im": "I am",
+      "webdev": "Web developer",
+      "subtitle": "Front End Developer/Back End Developer",
+      "btn": "Contact me"
+  },
+  "about": {
+      "pretitle": "About me",
+      "title": "Me, Myself and I",
+      "description": "They say oh my God I see the way you shine, Take your hand, my dear, and place them both in mine, You know you stopped me dead while I was passing by, And now I beg to see you dance just one more time",
+      "btn": "See my work"
+  },
+  "projects": {
+      "pretitle": "Selected work",
+      "title": "My First Project",
+      "description": "They say oh my God I see the way you shine, Take your hand, my dear, and place them both in mine, You know you stopped me dead while I was passing by, And now I beg to see you dance just one more time",
+      "live": "Live Link",
+      "back": "Back to projects"
+  },
+  "contact": {
+      "title": "Contact me",
+      "description": "If you want to get in touch with me, regarding a project or any random question, you can send me a message through the form, or an e-mail at",
+      "btn": "Send message",
+      "snack": {
+          "close": "Close",
+          "msg": "Message sent!"
+      },
+      "form": {
+          "name": "Name",
+          "email": "Email",
+          "msg": "Message",
+          "rules": {
+              "name": {
+                  "req": "Name field is required",
+                  "length": "Name must be less than 10 characters"
+              },
+              "email": {
+                  "req": "Email field is required",
+                  "valid": "E-mail must be valid"
+              },
+              "message": {
+                  "req": "Message field is required",
+                  "length": "Message must be at least 10 characters"
+              }
+          }
+      }
+  }
+}
