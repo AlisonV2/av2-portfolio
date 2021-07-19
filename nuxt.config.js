@@ -1,5 +1,3 @@
-import i18n from "./locales/i18n.js";
-
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -17,9 +15,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    "~/assets/styles/app.scss"
-  ],
+  css: ["~/assets/styles/app.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -34,28 +30,57 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    "@nuxt/components"
-  ],
+  buildModules: ["@nuxt/components"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
-    'nuxt-i18n'
+    "nuxt-i18n",
+    "@nuxtjs/sitemap"
   ],
 
+  /*
+   ** i18n config
+   */
   i18n: {
-    // strategy: 'prefix',
-    defaultLocale: "en",
-    vueI18nLoader: true,
     locales: [
-      { code: "en", iso: "en-US", file: "en.json" },
-      { code: "fr", iso: "fr-FR", file: "fr.json" }
+      {
+        code: "en",
+        iso: "en-AU",
+        name: "English"
+      },
+      {
+        code: "fr",
+        iso: "fr-FR",
+        name: "Français"
+      }
     ],
-    vueI18n: i18n
+    defaultLocale: "en",
+    vueI18n: {
+      fallbackLocale: "en",
+      messages: {
+        en: require("./locales/en.json"),
+        fr: require("./locales/fr.json")
+      }
+    }
   },
 
+  /*
+   ** Sitemap config
+   */
+  sitemap: {
+    trailingSlash: true,
+    i18n: true
+  },
+
+  /*
+   ** Router config
+   */
+  router: {
+    // easily spot nuxt-link without a trailing slash, because they will return a 404
+    trailingSlash: true
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
