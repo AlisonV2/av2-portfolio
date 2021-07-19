@@ -1,0 +1,77 @@
+<template>
+<span class="menu-desktop">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="146.277"
+    height="32"
+    viewBox="0 0 146.277 32"
+  >
+    <g
+      id="Group_2072"
+      data-name="Group 2072"
+      transform="translate(-1172.272 -47.71)"
+    >
+      <g
+        id="Group_2097"
+        data-name="Group 2097"
+        transform="translate(1272.675 50.942)"
+      >
+        <rect
+          id="Rectangle_5"
+          data-name="Rectangle 5"
+          width="5.046"
+          height="5.046"
+          fill="#fff"
+        />
+        <rect
+          id="Rectangle_6"
+          data-name="Rectangle 6"
+          width="23.013"
+          height="5.046"
+          transform="translate(7.569)"
+          fill="#fff"
+        />
+        <rect
+          id="Rectangle_7"
+          data-name="Rectangle 7"
+          width="5.046"
+          height="5.046"
+          transform="translate(45.874 25.537) rotate(180)"
+          fill="#fff"
+        />
+        <rect
+          id="Rectangle_8"
+          data-name="Rectangle 8"
+          width="23.013"
+          height="5.046"
+          transform="translate(38.304 25.537) rotate(180)"
+          fill="#fff"
+        />
+        <rect
+          id="Rectangle_9"
+          data-name="Rectangle 9"
+          width="43.351"
+          height="5.046"
+          transform="translate(45.874 15.291) rotate(180)"
+          fill="#fff"
+        />
+      </g>
+      <text
+        id="Menu"
+        transform="translate(1172.272 72.71)"
+        fill="#fff"
+        font-size="28"
+        font-family="Alice-Regular, Alice"
+      >
+        <tspan x="0" y="0">Menu</tspan>
+      </text>
+    </g>
+  </svg>
+  </span>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss"></style>

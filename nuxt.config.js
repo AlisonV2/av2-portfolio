@@ -1,17 +1,35 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "av2-portfolio",
-    htmlAttrs: {
-      lang: "en"
-    },
+    titleTemplate: "%s - portfolio-front",
+    title: "Alison Vandromme",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { name: "msapplication-TileColor", content: "#2b5797" },
+      {
+        hid: "description",
+        name: "description",
+        content: "Alison Vandromme : Full stack web developper"
+      },
       { name: "format-detection", content: "telephone=no" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png"
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/favicon-16x16.png"
+      },
+      { rel: "manifest", href: "/site.webmanifest" },
+      { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#5bbad5" }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
