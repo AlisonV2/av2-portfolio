@@ -13,13 +13,13 @@
 
 <script>
 import Navbar from "@/components/layout/navigation/Navbar";
-// import Sidenav from "@/components/layout/navigation/Sidenav";
+import Sidenav from "@/components/layout/navigation/Sidenav";
 import AppFooter from "@/components/layout/footer/AppFooter";
 
 export default {
   components: {
     Navbar,
-    // Sidenav,
+    Sidenav,
     AppFooter
   },
   data() {

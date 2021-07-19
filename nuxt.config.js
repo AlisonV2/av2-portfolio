@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - portfolio-front",
+    titleTemplate: "%s - Portfolio",
     title: "Alison Vandromme",
     meta: [
       { charset: "utf-8" },
@@ -33,7 +33,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~/assets/styles/app.scss"],
+  css: [
+    "~/assets/styles/app.scss",
+    '@fortawesome/fontawesome-svg-core/styles.css',
+
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -41,7 +45,8 @@ export default {
       src: "~/plugins/bootstrap.js",
       mode: "client"
     },
-    "~/plugins/core-components.js"
+    "~/plugins/core-components.js",
+    '~plugins/fontawesome.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
