@@ -1,0 +1,10 @@
+.nav-item {
+  a {
+    font-size: 5rem;
+    list-style: none;
+    &:hover,
+    &.nuxt-link-exact-active {
+      color: $primary-color!important;
+    }
+  }
+}
