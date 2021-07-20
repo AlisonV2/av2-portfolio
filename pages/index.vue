@@ -1,5 +1,4 @@
 <template>
-  <div class="container">
     <div class="row" id="#home-row">
       <div class="col-12 col-md-8">
         <h1>
@@ -17,7 +16,6 @@
         />
       </div>
     </div>
-  </div>
 </template>
 
 <script>
