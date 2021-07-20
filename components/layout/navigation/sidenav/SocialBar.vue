@@ -40,10 +40,9 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1.5rem;
   a {
     color: #1d1d1d;
-    line-height: 9.1rem;
+    line-height: 9rem;
     svg {
       font-size: 4.5rem;
     }

@@ -26,6 +26,10 @@ export default {
 </script>
 
 <style lang="scss">
+#app-footer {
+  position: relative;
+  bottom: 0!important;
+}
 .row {
   display: flex;
   align-items: center;

@@ -1,7 +1,6 @@
 <template>
-  <div class="container">
     <div class="row" id="#home-row">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-lg-8">
         <h1>
           {{ $t('landing.hi')}}, <br />
           {{ $t('landing.im')}}<span class="name"> Alison,</span> <br />
@@ -10,14 +9,13 @@
         <h3>{{ $t('landing.subtitle')}}</h3>
         <AppButton>{{ $t('landing.btn')}}</AppButton>
       </div>
-      <div class="col-12 col-md-4 home-img-col">
+      <div class="col-12 col-lg-4 home-img-col">
         <img :src="imageUrl"
           alt="HomePage Image"
           class="img-fluid home-img"
         />
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -51,7 +49,7 @@ export default {
 .name {
   color: #49bfc7;
 }
-@media screen and (min-width: 1264px) {
+@media screen and (min-width: 991px) {
   .home-img-col {
     display: flex;
   }

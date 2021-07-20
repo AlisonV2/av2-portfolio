@@ -4,7 +4,7 @@
         <Sidenav
           :show="displaySidenav"
           @closeSidenav="displaySidenav = false"/>
-        <main>
+        <main id="content-wrapper" class="container">
         <Nuxt />
         </main>
         <AppFooter />
@@ -31,10 +31,14 @@ export default {
 </script>
 
 <style lang="scss">
-main {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#content-wrapper {
+    overflow-x:auto;
+    overflow-y: auto;
+    height: 80vh;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 </style>

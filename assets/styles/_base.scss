@@ -2,6 +2,11 @@ html {
   font-size: 10px!important; // 1rem = 10px
 }
 
+body, html {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body {
   background: url('../images/dark-background.svg') no-repeat center center fixed;
   background-size: cover;
