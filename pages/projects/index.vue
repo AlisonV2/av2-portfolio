@@ -1,23 +1,96 @@
 <template>
   <div class="container">
     <div class="row">
-      <ProjectPreview />
-      <ProjectPreview />
-      <ProjectPreview />
-      <ProjectPreview />
-      <ProjectPreview />
-      <ProjectPreview />
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="content">
+          <nuxt-link :to="localePath('/projects/:id')">
+            <div class="content-overlay"></div>
+            <img class="content-image img-fluid" :src="imageUrl" />
+            <div class="content-details fadeIn-top">
+              <h3 class="content-title">{{ $t("projects.title") }}</h3>
+              <p class="content-text description">
+                {{ $t("projects.title") }}
+              </p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="content">
+          <nuxt-link :to="localePath('/projects/:id')">
+            <div class="content-overlay"></div>
+            <img class="content-image img-fluid" :src="imageUrl" />
+            <div class="content-details fadeIn-top">
+              <h3 class="content-title">{{ $t("projects.title") }}</h3>
+              <p class="content-text description">
+                {{ $t("projects.title") }}
+              </p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="content">
+          <nuxt-link :to="localePath('/projects/:id')">
+            <div class="content-overlay"></div>
+            <img class="content-image img-fluid" :src="imageUrl" />
+            <div class="content-details fadeIn-top">
+              <h3 class="content-title">{{ $t("projects.title") }}</h3>
+              <p class="content-text description">
+                {{ $t("projects.title") }}
+              </p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="content">
+          <nuxt-link :to="localePath('/projects/:id')">
+            <div class="content-overlay"></div>
+            <img class="content-image img-fluid" :src="imageUrl" />
+            <div class="content-details fadeIn-top">
+              <h3 class="content-title">{{ $t("projects.title") }}</h3>
+              <p class="content-text description">
+                {{ $t("projects.title") }}
+              </p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="content">
+          <nuxt-link :to="localePath('/projects/:id')">
+            <div class="content-overlay"></div>
+            <img class="content-image img-fluid" :src="imageUrl" />
+            <div class="content-details fadeIn-top">
+              <h3 class="content-title">{{ $t("projects.title") }}</h3>
+              <p class="content-text description">
+                {{ $t("projects.title") }}
+              </p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="content">
+          <nuxt-link :to="localePath('/projects/:id')">
+            <div class="content-overlay"></div>
+            <img class="content-image img-fluid" :src="imageUrl" />
+            <div class="content-details fadeIn-top">
+              <h3 class="content-title">{{ $t("projects.title") }}</h3>
+              <p class="content-text description">
+                {{ $t("projects.title") }}
+              </p>
+            </div>
+          </nuxt-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import ProjectPreview from "@/components/projects/ProjectPreview";
-
 export default {
-  components: {
-    ProjectPreview
-  },
   data() {
     return {
       imageUrl:
@@ -33,8 +106,8 @@ export default {
 }
 
 .row > * {
-  padding-top: calc(var(--bs-gutter-x) * .5);
-  padding-bottom: calc(var(--bs-gutter-x) * .5);
+  padding-top: calc(var(--bs-gutter-x) * 0.5);
+  padding-bottom: calc(var(--bs-gutter-x) * 0.5);
 }
 
 .content {
