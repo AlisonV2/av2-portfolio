@@ -7,7 +7,7 @@
           {{ $t('landing.webdev')}}
         </h1>
         <h3>{{ $t('landing.subtitle')}}</h3>
-        <nuxt-link :to="localePath('/projects')"><AppButton>{{ $t('landing.btn')}}</AppButton></nuxt-link>
+        <nuxt-link :to="localePath('/contact')"><AppButton>{{ $t('landing.btn')}}</AppButton></nuxt-link>
       </div>
       <div class="col-12 col-lg-4 home-img-col">
         <img :src="imageUrl"
