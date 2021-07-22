@@ -2,7 +2,8 @@ button {
   border: 2px solid $primary-color;
   background-color: transparent;
   color: $primary-color!important;
-  font-size: 1.8rem;
+  font-size: 1.8rem!important;
+  font-family: $default-font!important;
   width: 23.3rem;
   height: 5.5rem;
   font-weight: 700;
