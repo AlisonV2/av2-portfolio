@@ -3,12 +3,19 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <h4>{{ $t("projects.pretitle") }}</h4>
-        <h2>{{ $t("projects.title") }}</h2>
-        <p class="description">
-          {{ $t("projects.description") }}
+        <h2 v-if="$i18n.locale === 'en'">{{ loadedPosts.title.en }}</h2>
+        <h2 v-if="$i18n.locale === 'fr'">{{ loadedPosts.title.fr }}</h2>
+        <p class="description" v-if="$i18n.locale === 'en'">
+          {{ loadedPosts.description.en }}
         </p>
-        <p class="description">
-          {{ $t("projects.stack") }}
+        <p class="description" v-if="$i18n.locale === 'fr'">
+          {{ loadedPosts.description.fr }}
+        </p>
+        <p class="description" v-if="$i18n.locale === 'en'">
+          {{ loadedPosts.stack.en }}
+        </p>
+        <p class="description" v-if="$i18n.locale === 'fr'">
+          {{ loadedPosts.stack.fr }}
         </p>
         <div class="live-link">
           <font-awesome-icon class="link-icon" :icon="link" role="button" />
@@ -17,13 +24,19 @@
       </div>
       <div class="col-12 col-md-6 projects-img-col">
         <div>
-        <img :src="imageUrl"
-          alt="Project Image"
-          class="img-fluid project-img"
-        />
+          <img
+            :src="loadedPosts.thumbnail"
+            alt="Project Image"
+            class="img-fluid project-img"
+          />
         </div>
         <div class="projects-links">
-          <a class="project-link" href="">{{ $t("projects.back") }}</a>
+          <nuxt-link
+            :to="localePath('/projects')"
+            class="project-link"
+            href=""
+            >{{ $t("projects.back") }}</nuxt-link
+          >
         </div>
       </div>
     </div>
@@ -34,11 +47,20 @@
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export default {
-  data() {
-    return {
-      imageUrl:
-        "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    };
+  asyncData(context) {
+    if (context.payload) {
+      return {
+        loadedPosts: context.payload.postData
+      };
+    }
+    return context.app.$axios
+      .$get("/posts/" + context.params.id + ".json")
+      .then(data => {
+        return {
+          loadedPosts: data
+        };
+      })
+      .catch(e => context.error(e));
   },
   computed: {
     link() {

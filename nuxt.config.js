@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -60,6 +62,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "nuxt-i18n",
+    '@nuxtjs/dotenv',
     "@nuxtjs/sitemap"
   ],
 
@@ -105,7 +108,15 @@ export default {
     trailingSlash: true
   },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL : process.env.BASE_URL ||process.env.API_URL,
+    credentials: false
+  },
+
+  env: {
+    baseUrl: process.env.BASE_URL || process.env.API_URL,
+    firebaseApiKey: process.env.API_KEY,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
