@@ -1,103 +1,25 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="content">
-          <nuxt-link :to="localePath('/projects/:id')">
-            <div class="content-overlay"></div>
-            <img class="content-image img-fluid" :src="imageUrl" />
-            <div class="content-details fadeIn-top">
-              <h3 class="content-title">{{ $t("projects.title") }}</h3>
-              <p class="content-text description">
-                {{ $t("projects.title") }}
-              </p>
-            </div>
-          </nuxt-link>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="content">
-          <nuxt-link :to="localePath('/projects/:id')">
-            <div class="content-overlay"></div>
-            <img class="content-image img-fluid" :src="imageUrl" />
-            <div class="content-details fadeIn-top">
-              <h3 class="content-title">{{ $t("projects.title") }}</h3>
-              <p class="content-text description">
-                {{ $t("projects.title") }}
-              </p>
-            </div>
-          </nuxt-link>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="content">
-          <nuxt-link :to="localePath('/projects/:id')">
-            <div class="content-overlay"></div>
-            <img class="content-image img-fluid" :src="imageUrl" />
-            <div class="content-details fadeIn-top">
-              <h3 class="content-title">{{ $t("projects.title") }}</h3>
-              <p class="content-text description">
-                {{ $t("projects.title") }}
-              </p>
-            </div>
-          </nuxt-link>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="content">
-          <nuxt-link :to="localePath('/projects/:id')">
-            <div class="content-overlay"></div>
-            <img class="content-image img-fluid" :src="imageUrl" />
-            <div class="content-details fadeIn-top">
-              <h3 class="content-title">{{ $t("projects.title") }}</h3>
-              <p class="content-text description">
-                {{ $t("projects.title") }}
-              </p>
-            </div>
-          </nuxt-link>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="content">
-          <nuxt-link :to="localePath('/projects/:id')">
-            <div class="content-overlay"></div>
-            <img class="content-image img-fluid" :src="imageUrl" />
-            <div class="content-details fadeIn-top">
-              <h3 class="content-title">{{ $t("projects.title") }}</h3>
-              <p class="content-text description">
-                {{ $t("projects.title") }}
-              </p>
-            </div>
-          </nuxt-link>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
-        <div class="content">
-          <nuxt-link :to="localePath('/projects/:id')">
-            <div class="content-overlay"></div>
-            <img class="content-image img-fluid" :src="imageUrl" />
-            <div class="content-details fadeIn-top">
-              <h3 class="content-title">{{ $t("projects.title") }}</h3>
-              <p class="content-text description">
-                {{ $t("projects.title") }}
-              </p>
-            </div>
-          </nuxt-link>
-        </div>
-      </div>
+            <ProjectList
+              :posts="loadedPosts" />
     </div>
   </div>
 </template>
 
 <script>
+import ProjectList from '@/components/projects/ProjectList'
+
 export default {
-  data() {
-    return {
-      imageUrl:
-        "https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362"
-    };
+  components: {
+    ProjectList
+  },
+  computed: {
+    loadedPosts() {
+      return this.$store.getters.loadedPosts
+    }
   }
-};
+}
 </script>
 
 <style lang="scss">
