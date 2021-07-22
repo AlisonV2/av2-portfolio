@@ -1,6 +1,6 @@
 <template>
     <div class="sidenav-footer">
-      <span>&copy; Copyright {{ new Date().getFullYear() }} | Alison Vandromme </span>
+      <span>&copy; Copyright {{ new Date().getFullYear() }} | Alison Vandromme | v.1.0 </span>
     </div>
 </template>
 

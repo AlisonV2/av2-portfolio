@@ -53,7 +53,8 @@ div.input-block textarea:focus{
   border-color: $primary-color;
 }
 
-div.input-block input:focus + span.placeholder {
+div.input-block input:focus + span.placeholder,
+div.input-block textarea:focus + span.placeholder {
   color: $primary-color;
 }
 
