@@ -5,6 +5,12 @@
       "projects": "Projects",
       "contact": "Contact"
   },
+  "tooltip": {
+    "github": "See my work on Github",
+    "linkedin": "Let's connect on Linkedin",
+    "malt": "Hire me on Malt",
+    "phone": "Or simply give me a call"
+  },
   "landing": {
       "hi": "Hi",
       "im": "I am",

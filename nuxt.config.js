@@ -41,6 +41,13 @@ export default {
 
   ],
 
+  styleResources: {
+    scss: [
+      "@/assets/styles/global/variables.scss",
+    ]
+  },
+
+  loading: {color: "#49BFC7"},
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     {
@@ -48,7 +55,8 @@ export default {
       mode: "client"
     },
     "~/plugins/core-components.js",
-    '~plugins/fontawesome.js'
+    '~plugins/fontawesome.js',
+    '~plugins/tooltips.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -57,6 +65,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     "@nuxt/components",
+    '@nuxtjs/style-resources',
     '@nuxtjs/color-mode'
   ],
 
