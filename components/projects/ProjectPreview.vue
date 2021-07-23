@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-md-6 col-lg-4 mb-4">
+  <div class="col-12 col-md-4 mb-4 project-cols">
     <nuxt-link :to="localePath('/projects/' + id)">
       <div class="content">
         <div class="content-overlay"></div>
@@ -59,4 +59,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.content-image {
+  height: 25rem;
+  width: 100%;
+}
+</style>

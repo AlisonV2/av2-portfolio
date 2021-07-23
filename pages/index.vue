@@ -3,7 +3,7 @@
       <div class="col-12 col-lg-8">
         <h1>
           {{ $t('landing.hi')}}, <br />
-          {{ $t('landing.im')}}<span class="name"> Alison,</span> <br />
+          {{ $t('landing.im')}}<span class="name"> Alison</span>, <br />
           {{ $t('landing.webdev')}}
         </h1>
         <h3>{{ $t('landing.subtitle')}}</h3>

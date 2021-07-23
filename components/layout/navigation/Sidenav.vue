@@ -96,7 +96,7 @@ export default {
   padding: 2rem 0rem;
   height: 100vh;
   width: 100%;
-  background-color: white;
+  background-color: $light-color;
   z-index: 10000;
   position: fixed;
   top: 0;
@@ -107,7 +107,7 @@ export default {
 
 .slide-side-enter-active,
 .slide-side-leave-active {
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
 .slide-side-enter,
 .slide-side-leave-to {
