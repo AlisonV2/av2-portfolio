@@ -14,9 +14,7 @@ export default {};
   border-radius: 50%;
   height: 5rem;
   width: 5rem;
-  position: absolute;
-  bottom: 6rem;
-  right: 10%;
+  right: 1%;
   text-align: center;
   justify-content: center;
   display: block;
@@ -36,6 +34,12 @@ export default {};
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 white;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .round-button a {
+    right: 10rem;
   }
 }
 </style>
