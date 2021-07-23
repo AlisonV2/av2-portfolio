@@ -55,7 +55,10 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxt/components"],
+  buildModules: [
+    "@nuxt/components",
+    '@nuxtjs/color-mode'
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

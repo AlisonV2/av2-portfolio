@@ -1,6 +1,7 @@
 <template>
   <footer class="container">
     <div class="row" id="#app-footer">
+      <div class="col-6 switcher">
       <div class="lang-switcher">
         <span>
           <nuxt-link class="lang" :to="switchLocalePath('en')">EN</nuxt-link>
@@ -10,17 +11,20 @@
           <nuxt-link class="lang" :to="switchLocalePath('fr')">FR</nuxt-link>
         </span>
       </div>
-      <div class="col-12 hi-toggle"><HiToggle /></div>
+      </div>
+      <div class="col-6 info-button">
+      <RoundButton />
+      </div>
     </div>
   </footer>
 </template>
 
 <script>
-import HiToggle from "@/components/icons/HiToggle";
+import RoundButton from "@/components/icons/RoundButton";
 
 export default {
   components: {
-    HiToggle
+    RoundButton
   }
 };
 </script>
@@ -32,10 +36,11 @@ export default {
   padding-bottom: 4rem!important;
 }
 
-.lang-switcher {
-  position: absolute;
-  bottom: 6rem;
+.switcher {
+  display: flex;
+  align-items: center;
 }
+
 .lang {
   font-family: "Alice", serif;
   font-size: 2.5rem;
@@ -47,7 +52,7 @@ export default {
   }
 }
 
-.hi-toggle {
+.info-button {
   display: flex;
   justify-content: flex-end;
 }
