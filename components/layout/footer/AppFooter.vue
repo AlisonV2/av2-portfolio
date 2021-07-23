@@ -10,17 +10,17 @@
           <nuxt-link class="lang" :to="switchLocalePath('fr')">FR</nuxt-link>
         </span>
       </div>
-      <div class="col-12 hi-toggle"><HiToggle /></div>
+      <RoundButton />
     </div>
   </footer>
 </template>
 
 <script>
-import HiToggle from "@/components/icons/HiToggle";
+import RoundButton from "@/components/icons/RoundButton";
 
 export default {
   components: {
-    HiToggle
+    RoundButton
   }
 };
 </script>
