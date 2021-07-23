@@ -1,24 +1,13 @@
 <template>
-  <div class="container" v-if="show" fluid>
-    <div class="sidenav-backdrop" @click="closeSidenav"></div>
-    <div class="row slide-side" id="sidenav-drawer">
-      <div
-        class="morph-shape"
-        id="morph-shape"
-        data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="100%"
-          height="100%"
-          viewBox="0 0 100 800"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"
-          />
-        </svg>
-      </div>
+<div class="sidenav-container">
+  <div
+    v-if="show"
+    class="sidenav-backdrop"
+    @click="closeSidenav"></div>
+  <transition name="slide-side">
+    <div
+      v-if="show"
+      class="row sidenav">
       <div class="col-12 close-icon-wrapper">
         <CloseIcon @click="closeSidenav" />
       </div>
@@ -57,6 +46,7 @@
         <SidenavFooter />
       </div>
     </div>
+      </transition>
   </div>
 </template>
 
@@ -79,11 +69,6 @@ export default {
       default: false
     }
   },
-  computed: {
-    close() {
-      return faTimes;
-    }
-  },
   methods: {
     closeSidenav() {
       this.$emit("closeSidenav");
@@ -93,6 +78,10 @@ export default {
 </script>
 
 <style lang="scss">
+.sidenav-container {
+  height: 100%;
+  width: 100%;
+}
 .sidenav-backdrop {
   width: 50%;
   height: 100vh;
@@ -100,10 +89,10 @@ export default {
   z-index: 1000;
   position: fixed;
   top: 0;
-  left: 0;
+ right: 0;
 }
 
-#sidenav-drawer {
+.sidenav {
   padding: 2rem 0rem;
   height: 100vh;
   width: 100%;
@@ -114,6 +103,15 @@ export default {
   right: 0;
   box-sizing: border-box;
   margin: 0;
+}
+
+.slide-side-enter-active,
+.slide-side-leave-active {
+  transition: all 0.5s ease-out;
+}
+.slide-side-enter,
+.slide-side-leave-to {
+  transform: translateX(100%);
 }
 
 .close-icon-wrapper {
@@ -142,7 +140,7 @@ export default {
 }
 
 @media screen and (min-width: 960px) {
-  #sidenav-drawer {
+  .sidenav {
     width: 50%;
   }
 }
