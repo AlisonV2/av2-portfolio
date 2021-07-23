@@ -1,6 +1,6 @@
 <template>
-  <div class="container" id="#app-footer">
-    <div class="row">
+  <footer class="container">
+    <div class="row" id="#app-footer">
       <div class="col-6">
         <span>
           <nuxt-link class="lang" :to="switchLocalePath('en')">EN</nuxt-link>
@@ -12,7 +12,7 @@
       </div>
       <div class="col-6 hi-toggle"><HiToggle /></div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -27,12 +27,9 @@ export default {
 
 <style lang="scss">
 #app-footer {
-  position: relative;
-  bottom: 0!important;
-}
-.row {
   display: flex;
   align-items: center;
+  padding-bottom: 4rem!important;
 }
 .lang {
   font-family: "Alice", serif;

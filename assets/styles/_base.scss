@@ -13,3 +13,10 @@ body {
   color: $light-color;
   font-family: $default-font;
 }
+
+@media screen and (max-width: 576px) {
+  .col-12 {
+    justify-content: center;
+    text-align: center;
+  }
+}

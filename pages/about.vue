@@ -7,7 +7,9 @@
         <p class="description">
           {{ $t("about.description") }}
         </p>
+        <div class="button-wrapper">
         <AppButton>{{ $t("about.btn") }}</AppButton>
+        </div>
       </div>
       <div class="col-12 col-md-4 home-img-col">
         <img :src="imageUrl"
@@ -30,4 +32,8 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.button-wrapper {
+  margin-top: 5rem;
+}
+</style>

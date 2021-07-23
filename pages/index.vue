@@ -49,7 +49,7 @@ export default {
 .name {
   color: #49bfc7;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
   .home-img-col {
     display: flex;
   }
