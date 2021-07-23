@@ -1,9 +1,7 @@
 <template>
   <div class="container">
-    <div class="row">
             <ProjectList
               :posts="loadedPosts" />
-    </div>
   </div>
 </template>
 

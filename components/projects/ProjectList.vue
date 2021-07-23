@@ -1,5 +1,5 @@
 <template>
-  <section>
+<div class="row">
     <ProjectPreview
       v-for="post in posts"
       :key="post.id"
@@ -14,7 +14,7 @@
       :stackEn="post.stack.en"
       :stackFr="post.stack.fr"
     />
-  </section>
+  </div>
 </template>
 
 <script>
