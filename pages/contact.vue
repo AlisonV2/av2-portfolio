@@ -1,13 +1,12 @@
 <template>
   <div class="row">
-    <div class="col-12 col-md-5 contact-text">
+    <div class="col-12 col-lg-6 contact-text">
       <h2>{{ $t("contact.title") }}</h2>
       <p class="description">
         {{ $t("contact.description") }}
       </p>
-      <h4>contact@alisonvandromme.com</h4>
     </div>
-    <div class="col-12 col-md-7 contact-form">
+    <div class="col-12 col-lg-6 contact-form">
       <AppForm />
     </div>
   </div>
@@ -24,8 +23,14 @@ export default {
 </script>
 
 <style lang="scss">
-.contact-form {
-  display: flex;
-  justify-content: flex-end;
+
+@media screen and (min-width: 992px) {
+  .contact-form {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .contact-text {
+    padding-right: 10rem;
+  }
 }
 </style>

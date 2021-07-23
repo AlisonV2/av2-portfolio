@@ -1,23 +1,30 @@
-form{
-  width: 80%;
+@media screen and (min-width: 768px) {
+  form {
+    width: 80%;
+  }
+}
+
+form {
+  width: 100%;
   max-width: auto;
-  border:1px solid #797979;
-  padding:3vw;
-  display:flex;
-  flex-direction:column;
-  border-radius:5px;
+  border: 1px solid #797979;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
   .input-block {
     position: relative;
     margin-bottom: 4rem;
-    input, textarea {
+    input,
+    textarea {
       font-weight: 500;
       font-size: 1.8rem;
       width: 100%;
       color: $light-color;
       padding: 1.5rem 1.5rem;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       border: 1px solid $secondary-text;
-      outline:none;
+      outline: none;
       background-color: transparent;
     }
   }
@@ -26,8 +33,8 @@ form{
 span.placeholder {
   position: absolute;
   margin: 1.9rem 0;
-  padding: 0 .5rem;
-  color:  $secondary-text;
+  padding: 0 0.5rem;
+  color: $secondary-text;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
@@ -42,13 +49,12 @@ span.placeholder {
 div.input-block input:valid + span.placeholder,
 div.input-block input:focus + span.placeholder,
 div.input-block textarea:valid + span.placeholder,
-div.input-block textarea:focus + span.placeholder
- {
+div.input-block textarea:focus + span.placeholder {
   transform: scale(0.8) translateY(-4.7rem);
 }
 
 div.input-block input:focus,
-div.input-block textarea:focus{
+div.input-block textarea:focus {
   color: $primary-color;
   border-color: $primary-color;
 }
@@ -61,11 +67,4 @@ div.input-block textarea:focus + span.placeholder {
 .form-btn {
   display: flex;
   justify-content: flex-end;
-}
-
-
-@media screen and (min-width: 960px) {
-  form {
-      width: 80%;
-  }
 }

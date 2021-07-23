@@ -27,7 +27,7 @@
   },
   "contact": {
       "title": "Contact me",
-      "description": "If you want to get in touch with me, regarding a project or any random question, you can send me a message through the form, or an e-mail at",
+      "description": "If you want to get in touch with me, regarding a project or any random question, you can send me a message through the form.",
       "btn": "Send message",
       "snack": {
           "close": "Close",

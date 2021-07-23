@@ -1,10 +1,19 @@
-.nav-item {
-  a {
+.nav-item a {
+  font-size: 3rem;
+  list-style: none;
+  &:hover,
+  &.nuxt-link-exact-active {
+    color: $primary-color !important;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .nav-item a {
     font-size: 5rem;
     list-style: none;
     &:hover,
     &.nuxt-link-exact-active {
-      color: $primary-color!important;
+      color: $primary-color !important;
     }
   }
 }
