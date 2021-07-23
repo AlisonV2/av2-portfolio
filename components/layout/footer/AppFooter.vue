@@ -1,7 +1,7 @@
 <template>
   <footer class="container">
     <div class="row" id="#app-footer">
-      <div class="col-6">
+      <div class="lang-switcher">
         <span>
           <nuxt-link class="lang" :to="switchLocalePath('en')">EN</nuxt-link>
         </span>
@@ -10,7 +10,7 @@
           <nuxt-link class="lang" :to="switchLocalePath('fr')">FR</nuxt-link>
         </span>
       </div>
-      <div class="col-6 hi-toggle"><HiToggle /></div>
+      <div class="col-12 hi-toggle"><HiToggle /></div>
     </div>
   </footer>
 </template>
@@ -30,6 +30,11 @@ export default {
   display: flex;
   align-items: center;
   padding-bottom: 4rem!important;
+}
+
+.lang-switcher {
+  position: absolute;
+  bottom: 6rem;
 }
 .lang {
   font-family: "Alice", serif;

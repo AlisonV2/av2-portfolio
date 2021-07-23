@@ -40,7 +40,7 @@ export default {
 <style lang="scss">
 
 .navbar-container {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .brand-desktop,

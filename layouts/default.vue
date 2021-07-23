@@ -34,7 +34,7 @@ export default {
 #content-wrapper {
     overflow-x:auto;
     overflow-y: auto;
-    height: 80vh;
+    height: 75vh;
     margin-top: 3rem;
     display: flex;
     justify-content: center;
