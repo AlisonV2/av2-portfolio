@@ -36,5 +36,6 @@ export default {};
   justify-content: flex-end;
   display: flex;
   transform: perspective(28rem) rotateX(25deg);
+  color: $accent-darker-50;
 }
 </style>
