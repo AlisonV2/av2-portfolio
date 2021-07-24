@@ -1,13 +1,18 @@
 <template>
-  <div class="row">
-    <div class="col-12 col-lg-6 contact-text">
-      <h2>{{ $t("contact.title") }}</h2>
-      <p class="description">
-        {{ $t("contact.description") }}
-      </p>
-    </div>
-    <div class="col-12 col-lg-6 contact-form">
-      <AppForm />
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 contact-text">
+        <AppHeader>
+          <template v-slot:pretitle>{{ $t("contact.pretitle") }}</template>
+          <template v-slot:title>{{ $t("contact.title") }}</template>
+        </AppHeader>
+        <p class="description">
+          {{ $t("contact.description") }}
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 contact-form">
+        <AppForm />
+      </div>
     </div>
   </div>
 </template>
@@ -23,7 +28,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 @media screen and (min-width: 992px) {
   .contact-form {
     display: flex;

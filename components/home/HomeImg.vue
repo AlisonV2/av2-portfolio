@@ -31,11 +31,17 @@ export default {};
 
 <style lang="scss">
 .home-img {
-  font-family: $code-font;
+  font-family: $default-font;
   font-size: 1.2rem;
-  justify-content: flex-end;
-  display: flex;
+  display: none;
   transform: perspective(28rem) rotateX(25deg);
   color: $accent-darker-50;
+}
+
+@include bp-up(xl) {
+  .home-img {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 </style>

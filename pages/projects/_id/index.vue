@@ -17,10 +17,7 @@
         <p class="description" v-if="$i18n.locale === 'fr'">
           {{ loadedPosts.stack.fr }}
         </p>
-        <div class="live-link">
-          <font-awesome-icon class="link-icon" :icon="link" role="button" />
-          <a class="project-link" href="">{{ $t("projects.live") }}</a>
-        </div>
+        <AppLink :href="loadedPosts.liveLink">{{ $t("projects.live") }}</AppLink>
       </div>
       <div class="col-12 col-md-6 projects-img-col">
         <div>
@@ -44,8 +41,6 @@
 </template>
 
 <script>
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-
 export default {
   asyncData(context) {
     if (context.payload) {
@@ -61,11 +56,6 @@ export default {
         };
       })
       .catch(e => context.error(e));
-  },
-  computed: {
-    link() {
-      return faLink;
-    }
   }
 };
 </script>
@@ -90,16 +80,5 @@ export default {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.live-link {
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.link-icon {
-  font-size: 2.5rem;
-  color: $accent;
 }
 </style>

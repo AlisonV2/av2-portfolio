@@ -2,30 +2,31 @@ h1,
 h2,
 h3 {
   line-height: $line-height-xs;
+  margin-bottom: 2rem;
 }
 
 h1 {
-  @include title($light);
+  @include title($light, $accent-font);
   font-size: 5rem;
 }
 
 h2 {
-  @include title($light);
+  @include title($light, $accent-font);
   font-size: 3rem;
 }
 
 h3 {
-  @include title($primary-lighter-50);
+  @include title($primary-lighter-50, $accent-font);
   font-size: 2rem;
 }
 
 h4 {
-  @include title($accent);
+  @include title($accent, $accent-font);
   font-size: 2rem;
 }
 
 @include bp-up(sm) {
-  h1, h2, h3 {
+  h1, h2 {
     line-height: $line-height-sm;
   }
   h1 {
@@ -43,7 +44,7 @@ h4 {
 }
 
 @include bp-up(md) {
-  h1, h2, h3 {
+  h1, h2 {
     line-height: $line-height-md;
   }
   h1 {
@@ -61,7 +62,7 @@ h4 {
 }
 
 @include bp-up(lg) {
-  h1, h2, h3 {
+  h1, h2 {
     line-height: $line-height-lg;
   }
   h1 {
@@ -79,7 +80,7 @@ h4 {
 }
 
 @include bp-up(xl) {
-  h1, h2, h3 {
+  h1, h2 {
     line-height: $line-height-xl;
   }
   h1 {

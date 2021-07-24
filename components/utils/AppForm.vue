@@ -13,7 +13,7 @@
       <span class="placeholder">{{ $t("contact.form.msg") }}</span>
     </div>
     <div class="form-btn">
-      <AppButton class="app-button" type="submit">{{
+      <AppButton type="submit">{{
         $t("contact.btn")
       }}</AppButton>
     </div>
