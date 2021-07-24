@@ -43,7 +43,9 @@ export default {
 
   styleResources: {
     scss: [
-      "@/assets/styles/global/variables.scss",
+      "@/assets/styles/global/global.scss"
+      // "@/assets/styles/global/variables.scss",
+      // "@/assets/styles/global/fonts.scss"
     ]
   },
 
@@ -66,7 +68,6 @@ export default {
   buildModules: [
     "@nuxt/components",
     '@nuxtjs/style-resources',
-    '@nuxtjs/color-mode'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -78,9 +79,6 @@ export default {
     "@nuxtjs/sitemap"
   ],
 
-  /*
-   ** i18n config
-   */
   i18n: {
     locales: [
       {

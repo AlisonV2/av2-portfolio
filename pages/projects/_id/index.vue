@@ -80,7 +80,7 @@ export default {
   justify-content: flex-end;
 }
 
-@media screen and (min-width: 1264px) {
+@include bp-up(lg) {
   .project-img-col {
     display: flex;
   }
@@ -100,5 +100,6 @@ export default {
 
 .link-icon {
   font-size: 2.5rem;
+  color: $accent;
 }
 </style>

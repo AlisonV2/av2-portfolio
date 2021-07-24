@@ -16,7 +16,10 @@
       "im": "I am",
       "webdev": "Web developer",
       "subtitle": "Front End Developer/Back End Developer",
-      "btn": "Contact me"
+      "btn": "See my work",
+      "typos": "Check for typos!",
+      "bp-up": "breakpoint above",
+      "bp-down": "breakpoint below"
   },
   "about": {
       "pretitle": "About me",

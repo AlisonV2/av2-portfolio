@@ -31,14 +31,14 @@ export default {
 </script>
 
 <style lang="scss">
+
 #content-wrapper {
-    overflow-x:auto;
-    overflow-y: auto;
     height: 75vh;
     margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 </style>

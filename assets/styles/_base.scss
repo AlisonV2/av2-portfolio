@@ -1,25 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-
 html {
   font-size: 10px!important; // 1rem = 10px
 }
 
 body, html {
   height: 100vh;
-  overflow: hidden;
 }
 
 body {
   background: url('../images/dark-background.svg') no-repeat center center fixed;
   background-size: cover;
-  color: $light-color;
+  color: $light;
   font-family: $default-font;
+  overflow: hidden; }
+
+.row {
+  --bs-gutter-y: 1.5rem;
+  width: 100%;
 }
 
-@media screen and (max-width: 576px) {
+.row > * {
+  padding-top: calc(var(--bs-gutter-x) * 0.5);
+  padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+}
+
+@include bp-down(sm) {
   .col-12 {
     justify-content: center;
     text-align: center;
   }
 }
+
