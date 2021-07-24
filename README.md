@@ -1,8 +1,9 @@
 ---
 Alison Vandromme : Portfolio built with Nuxt SSR
+Deployed website : https://www.alisonvandromme.com
 ---
 
-# Alison Vandromme : Bilingual portfolio built with Nuxt
+# Alison Vandromme : Bilingual Portfolio
 
 ## What I used
 
