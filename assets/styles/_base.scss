@@ -11,10 +11,11 @@ body {
   background-size: cover;
   color: $light;
   font-family: $default-font;
-}
+  overflow: hidden; }
 
 .row {
   --bs-gutter-y: 1.5rem;
+  width: 100%;
 }
 
 .row > * {

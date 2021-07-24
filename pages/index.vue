@@ -1,25 +1,32 @@
 <template>
-    <div class="row" id="#home-row">
-      <div class="col-12 col-lg-8">
-        <h1>
-          {{ $t('landing.hi')}}, <br />
-          {{ $t('landing.im')}}<span class="name"> Alison</span>, <br />
-          {{ $t('landing.webdev')}}
-        </h1>
-        <h3>{{ $t('landing.subtitle')}}</h3>
-        <nuxt-link :to="localePath('/contact')"><AppButton>{{ $t('landing.btn')}}</AppButton></nuxt-link>
-      </div>
-      <div class="col-12 col-lg-4 home-img-col">
-        <img :src="imageUrl"
+  <div class="row" id="#home-row">
+    <div class="col-12 col-lg-7">
+      <h1>
+        {{ $t("landing.hi") }}, <br />
+        {{ $t("landing.im") }}<span class="name"> Alison</span>, <br />
+        {{ $t("landing.webdev") }}
+      </h1>
+      <h3>{{ $t("landing.subtitle") }}</h3>
+      <nuxt-link :to="localePath('/contact')"
+        ><AppButton>{{ $t("landing.btn") }}</AppButton></nuxt-link
+      >
+    </div>
+    <div class="col-12 col-lg-5 home-img-col">
+      <!-- <img :src="imageUrl"
           alt="HomePage Image"
           class="img-fluid home-img"
-        />
-      </div>
+        /> -->
+      <HomeCode />
     </div>
+  </div>
 </template>
 
 <script>
+import HomeCode from "@/components/layout/images/HomeCode";
 export default {
+  components: {
+    HomeCode
+  },
   data() {
     return {
       imageUrl:
@@ -30,27 +37,29 @@ export default {
 </script>
 
 <style lang="scss">
-.home-img-col {
+.home-img-col, .home-img {
   display: none;
 }
 
 #home-row {
   align-items: center;
   height: 80vh;
+  width: 100%;
   .home-text {
-    text-align: start;
-    .home-img {
-      border-radius: 15px;
-      justify-content: flex-end;
-    }
+    text-align: flex-start;
   }
 }
 
-.name {
-  color: #49bfc7;
+.home-img-col {
+  @include col-flex;
+  align-items: flex-end;
 }
-@media screen and (min-width: 992px) {
-  .home-img-col {
+
+.name {
+  color: $accent;
+}
+@include bp-up(lg) {
+  .home-img-col, .home-img {
     display: flex;
   }
 }
