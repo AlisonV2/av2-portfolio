@@ -58,7 +58,7 @@ export default {
 .name {
   color: $accent;
 }
-@include bp-up(lg) {
+@include bp-up(xl) {
   .home-img-col, .home-img {
     display: flex;
   }

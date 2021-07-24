@@ -1,5 +1,6 @@
 <template>
   <p class="home-img">
+    // {{ $t("landing.bp-up") }}<br />
     @mixin bp-up($breakpoint) { <br />
     &emsp;@if map-has-key($breakpoints, $breakpoint) {<br />
     &ensp; $breakpoint-value: map-get($breakpoints, $breakpoint);<br />
@@ -7,10 +8,10 @@
     &ensp;&emsp;@content;<br />
     &ensp;}<br />
     &ensp;} @else {<br />
-    &emsp;@warn 'Check for typos! Breakpoint: #{$breakpoint}.';<br />
+    &emsp;&ensp;@warn '{{ $t("landing.typos") }} Breakpoint: #{$breakpoint}';<br />
     &ensp;}<br />
     }<br />
-    <br />
+    // {{ $t("landing.bp-down") }}<br />
     @mixin bp-down($breakpoint) {<br />
     &emsp; @if map-has-key($breakpoints, $breakpoint) {<br />
     &ensp;$breakpoint-value: map-get($breakpoints, $breakpoint);<br />
@@ -18,7 +19,7 @@
     &ensp;&emsp;@content;<br />
     &ensp;}<br />
     &emsp;} @else {<br />
-    &ensp;@warn 'Check for typos! Breakpoint: #{$breakpoint}.';<br />
+    &emsp;&ensp;@warn '{{ $t("landing.typos") }} Breakpoint: #{$breakpoint}';<br />
     &emsp;}<br />
     }
   </p>
