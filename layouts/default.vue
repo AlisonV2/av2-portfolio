@@ -33,7 +33,7 @@ export default {
 <style lang="scss">
 
 #content-wrapper {
-    height: 75vh;
+    height: 70vh;
     margin-top: 3rem;
     display: flex;
     justify-content: center;

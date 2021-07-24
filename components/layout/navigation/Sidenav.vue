@@ -6,7 +6,7 @@
         <div class="col-12 close-icon-wrapper">
           <CloseIcon @click="closeSidenav" />
         </div>
-        <div class="col-12 col-sm-6 social-icons">
+        <div class="col-12 col-sm-6 social-icons-col">
           <SocialBar />
         </div>
         <div class="col-12 col-sm-6 nav-menu">

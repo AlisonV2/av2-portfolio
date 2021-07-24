@@ -66,7 +66,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     "@nuxt/components",
-    '@nuxtjs/style-resources',
+    '@nuxtjs/style-resources'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -82,7 +82,7 @@ export default {
     locales: [
       {
         code: "en",
-        iso: "en-AU",
+        iso: "en-UK",
         name: "English"
       },
       {
@@ -101,17 +101,11 @@ export default {
     }
   },
 
-  /*
-   ** Sitemap config
-   */
   sitemap: {
     trailingSlash: true,
     i18n: true
   },
 
-  /*
-   ** Router config
-   */
   router: {
     // easily spot nuxt-link without a trailing slash, because they will return a 404
     trailingSlash: true
