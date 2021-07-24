@@ -111,10 +111,11 @@ export default {
     @include col-flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0.7rem;
     a {
+      padding-top: 2rem;
       color: $dark-color;
-      line-height: 9rem;
+      line-height: $line-height-md;
+      justify-content:center;
       svg {
         font-size: 4.5rem;
         &:hover {
