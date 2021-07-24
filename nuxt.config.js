@@ -14,7 +14,8 @@ export default {
         name: "description",
         content: "Alison Vandromme : Full stack web developper"
       },
-      { name: "format-detection", content: "telephone=no" }
+      { name: "format-detection", content: "telephone=no" },
+      { name: "theme-color", content: "#1d1d1d"}
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },

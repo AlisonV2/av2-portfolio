@@ -27,10 +27,6 @@ export default {
 </script>
 
 <style lang="scss">
-.home-img-col, .home-img {
-  display: none;
-}
-
 #home-row {
   align-items: center;
   height: 80vh;
@@ -40,17 +36,18 @@ export default {
   }
 }
 
-.home-img-col {
-  @include col-flex;
-  align-items: flex-end;
-}
-
 .name {
   color: $accent;
 }
+
+.home-img-col {
+  display: none;
+}
+
 @include bp-up(xl) {
-  .home-img-col, .home-img {
-    display: flex;
+  .home-img-col {
+    @include col-flex;
+    align-items: flex-end;
   }
 }
 </style>
