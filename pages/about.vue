@@ -1,24 +1,24 @@
 <template>
   <div class="container">
-    <HeaderRow/>
-    <TextRow/>
-    <ResumeRow/>
+    <AppHeader>
+      <template v-slot:pretitle>{{ $t("about.pretitle") }}</template>
+      <template v-slot:title>{{ $t("about.title") }}</template>
+    </AppHeader>
+    <TextRow />
+    <ResumeRow />
   </div>
 </template>
 
 <script>
-import HeaderRow from '@/components/about/HeaderRow';
-import TextRow from '@/components/about/TextRow';
-import ResumeRow from '@/components/about/ResumeRow';
+import TextRow from "@/components/about/TextRow";
+import ResumeRow from "@/components/about/ResumeRow";
 
 export default {
   components: {
-    HeaderRow,
     TextRow,
     ResumeRow
   }
 };
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

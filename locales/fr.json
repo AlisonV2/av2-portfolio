@@ -30,12 +30,13 @@
   },
   "projects": {
       "pretitle": "A la une",
-      "title": "Mon project uno",
+      "title": "Projets récents",
       "description": "Je suis une licorne avec des pouvoirs magiques, Mon style est épileptique. Je suis une licorne avec une crinière swagguée, Elle est douce comme Beyoncé",
       "live": "Lien Direct",
       "back": "Retour aux projets"
   },
   "contact": {
+    "pretitle": "Contact",
       "title": "Me contacter",
       "description": "Si vous souhaitez me contacter concernant un projet ou pour toute autre question, n'hésitez pas à me contacter.",
       "btn": "Envoyer",

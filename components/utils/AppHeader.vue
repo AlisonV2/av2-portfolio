@@ -1,8 +1,8 @@
 <template>
-  <div class="row" id="about-row-title">
+  <div class="row">
     <div class="col-12">
-      <h4>{{ $t("about.pretitle") }}</h4>
-      <h2>{{ $t("about.title") }}</h2>
+      <h4><slot name="pretitle"/></h4>
+      <h2><slot name="title"/></h2>
     </div>
   </div>
 </template>

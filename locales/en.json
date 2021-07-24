@@ -30,12 +30,13 @@
   },
   "projects": {
       "pretitle": "Selected work",
-      "title": "My First Project",
+      "title": "Most projects",
       "description": "They say oh my God I see the way you shine, Take your hand, my dear, and place them both in mine, You know you stopped me dead while I was passing by, And now I beg to see you dance just one more time",
       "live": "Live Link",
       "back": "Back to projects"
   },
   "contact": {
+      "pretitle": "Get in touch",
       "title": "Contact me",
       "description": "If you want to get in touch with me, regarding a project or any random question, you can send me a message through the form.",
       "btn": "Send message",
