@@ -4,7 +4,6 @@ html {
 
 body, html {
   height: 100vh;
-  overflow: hidden;
 }
 
 body {
@@ -14,7 +13,16 @@ body {
   font-family: $default-font;
 }
 
-@media screen and (max-width: 576px) {
+.row {
+  --bs-gutter-y: 1.5rem;
+}
+
+.row > * {
+  padding-top: calc(var(--bs-gutter-x) * 0.5);
+  padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+}
+
+@include bp-down(sm) {
   .col-12 {
     justify-content: center;
     text-align: center;

@@ -1,52 +1,47 @@
 <template>
-<div class="sidenav-container">
-  <div
-    v-if="show"
-    class="sidenav-backdrop"
-    @click="closeSidenav"></div>
-  <transition name="slide-side">
-    <div
-      v-if="show"
-      class="row sidenav">
-      <div class="col-12 close-icon-wrapper">
-        <CloseIcon @click="closeSidenav" />
+  <div class="sidenav-container">
+    <div v-if="show" class="sidenav-backdrop" @click="closeSidenav"></div>
+    <transition name="slide-side">
+      <div v-if="show" class="row sidenav">
+        <div class="col-12 close-icon-wrapper">
+          <CloseIcon @click="closeSidenav" />
+        </div>
+        <div class="col-12 col-sm-6 social-icons">
+          <SocialBar />
+        </div>
+        <div class="col-12 col-sm-6 nav-menu">
+          <ul class="nav-list" @click="closeSidenav">
+            <li class="nav-item">
+              <nuxt-link :to="localePath('/')">{{ $t("path.home") }}</nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link :to="localePath('/about')">{{
+                $t("path.about")
+              }}</nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link :to="localePath('/projects')">{{
+                $t("path.projects")
+              }}</nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link :to="localePath('/contact')">{{
+                $t("path.contact")
+              }}</nuxt-link>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 divider">
+          <hr size="2" />
+        </div>
+        <div class="col-12 footer-text">
+          <h4>I have no idea</h4>
+        </div>
+        <div class="col-12 copyright">
+          <SidenavFooter />
+        </div>
       </div>
-      <div class="col-12 col-sm-6 social-icons">
-        <SocialBar />
-      </div>
-      <div class="col-12 col-sm-6 nav-menu">
-        <ul class="nav-list" @click="closeSidenav">
-          <li class="nav-item">
-            <nuxt-link :to="localePath('/')">{{ $t("path.home") }}</nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link :to="localePath('/about')">{{
-              $t("path.about")
-            }}</nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link :to="localePath('/projects')">{{
-              $t("path.projects")
-            }}</nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link :to="localePath('/contact')">{{
-              $t("path.contact")
-            }}</nuxt-link>
-          </li>
-        </ul>
-      </div>
-      <div class="col-6 divider">
-        <hr size="2" />
-      </div>
-      <div class="col-12 footer-text">
-        <h4>I have no idea</h4>
-      </div>
-      <div class="col-12 copyright">
-        <SidenavFooter />
-      </div>
-    </div>
-      </transition>
+    </transition>
   </div>
 </template>
 
@@ -89,14 +84,14 @@ export default {
   z-index: 1000;
   position: fixed;
   top: 0;
- right: 0;
+  right: 0;
 }
 
 .sidenav {
   padding: 2rem 0rem;
   height: 100vh;
   width: 100%;
-  background-color: $light-color;
+  background-color: $accent-lighter-90;
   z-index: 10000;
   position: fixed;
   top: 0;
@@ -115,31 +110,28 @@ export default {
 }
 
 .close-icon-wrapper {
+  @include row-flex;
   padding: 1rem 5rem;
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   .close-icon {
-    color: #1d1d1d;
+    color: $primary;
     height: 5rem;
     cursor: pointer;
   }
 }
 .copyright,
 .footer-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include col-flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .nav-menu {
-  display: flex;
-  flex-direction: column;
+  @include col-flex;
   justify-content: center;
-  line-height: 8rem;
+  line-height: $line-height-lg;
 }
 
-@media screen and (min-width: 960px) {
+@include bp-up(lg) {
   .sidenav {
     width: 50%;
   }
@@ -147,7 +139,7 @@ export default {
 
 /* Mobile only menu */
 
-@media screen and (max-width: 600px) {
+@include bp-down(sm) {
   .nav-menu {
     text-align: center;
   }

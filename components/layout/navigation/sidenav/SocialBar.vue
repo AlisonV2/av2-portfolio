@@ -24,8 +24,13 @@
     >
       <font-awesome-icon :icon="freelance" />
     </a>
-    <a href="tel:+33754517210" target="_blank" rel="noopener noreferrer" v-tooltip="'Or simply give me a call'">
-      <font-awesome-icon :icon="phone" />
+    <a
+      href="mailto:alison.vandromme@outlook.fr"
+      target="_blank"
+      rel="noopener noreferrer"
+      v-tooltip="'Or simply send me a mail'"
+    >
+      <font-awesome-icon :icon="mail" />
     </a>
   </div>
 </template>
@@ -33,7 +38,7 @@
 <script>
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
-  faPhoneSquareAlt,
+  faEnvelopeSquare,
   faExternalLinkSquareAlt
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -45,8 +50,8 @@ export default {
     linkedin() {
       return faLinkedin;
     },
-    phone() {
-      return faPhoneSquareAlt;
+    mail() {
+      return faEnvelopeSquare;
     },
     freelance() {
       return faExternalLinkSquareAlt;
@@ -57,10 +62,10 @@ export default {
 
 <style lang="scss">
 .social-icons {
-  display: flex;
-  flex-direction: column;
+  @include col-flex;
   justify-content: center;
   align-items: center;
+  padding-top: .7rem;
   a {
     color: $dark-color;
     line-height: 9rem;

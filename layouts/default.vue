@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 #content-wrapper {
     overflow-x:auto;
     overflow-y: auto;

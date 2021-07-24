@@ -5,26 +5,22 @@ h3 {
 }
 
 h1 {
-  @include title;
-  color: $light;
+  @include title($light);
   font-size: 5rem;
 }
 
 h2 {
-  @include title;
-  color: $accent;
+  @include title($light);
   font-size: 3rem;
 }
 
 h3 {
-  @include title;
-  color: $primary-lighter-50;
+  @include title($primary-lighter-50);
   font-size: 2rem;
 }
 
 h4 {
-  @include title;
-  color: $accent;
+  @include title($accent);
   font-size: 2rem;
 }
 
@@ -90,7 +86,7 @@ h4 {
     font-size: 9rem;
   }
   h2 {
-    font-size: 7rem;
+    font-size: 6.5rem;
   }
   h3 {
     font-size: 3.5rem;

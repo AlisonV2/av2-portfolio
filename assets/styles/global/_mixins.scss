@@ -2,8 +2,20 @@
 * Typography
 */
 
-@mixin title
+@mixin title($color)
 {
   font-family: $accent-font;
   font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin col-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin row-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
