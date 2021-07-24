@@ -4,7 +4,7 @@
         <Sidenav
           :show="displaySidenav"
           @closeSidenav="displaySidenav = false"/>
-        <main id="content-wrapper" class="container">
+        <main id="content-wrapper">
         <Nuxt />
         </main>
         <AppFooter />
@@ -38,7 +38,12 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: auto;
 }
 
+@include bp-up(lg){
+  #content-wrapper {
+    overflow: hidden;
+  }
+}
 </style>

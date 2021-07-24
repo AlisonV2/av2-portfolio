@@ -2,10 +2,10 @@
 * Typography
 */
 
-@mixin title($color)
+@mixin title($color, $font-family)
 {
-  font-family: $accent-font;
-  font-weight: $font-weight;
+  font-family: $font-family;
+  font-weight: $font-weight-reg!important;
   color: $color;
 }
 

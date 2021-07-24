@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-            <ProjectList
-              :posts="loadedPosts" />
+      <ProjectList :posts="loadedPosts" />
   </div>
 </template>
 

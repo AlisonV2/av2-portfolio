@@ -11,7 +11,8 @@ body {
   background-size: cover;
   color: $light;
   font-family: $default-font;
-  overflow: hidden; }
+  // overflow: hidden;
+}
 
 .row {
   --bs-gutter-y: 1.5rem;

@@ -25,7 +25,8 @@
       "pretitle": "A propos",
       "title": "Moi en bref",
       "description": "Je suis une licorne avec des pouvoirs magiques, Mon style est épileptique. Je suis une licorne avec une crinière swagguée, Elle est douce comme Beyoncé",
-      "btn": "Mes projets"
+      "btn": "Mes projets",
+      "download": "Mon CV"
   },
   "projects": {
       "pretitle": "A la une",
