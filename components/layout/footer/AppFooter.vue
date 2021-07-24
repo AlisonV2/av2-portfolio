@@ -2,29 +2,29 @@
   <footer class="container">
     <div class="row" id="#app-footer">
       <div class="col-6 switcher">
-      <div class="lang-switcher">
-        <span>
-          <nuxt-link class="lang" :to="switchLocalePath('en')">EN</nuxt-link>
-        </span>
-        <span class="lang">&#9679;</span>
-        <span>
-          <nuxt-link class="lang" :to="switchLocalePath('fr')">FR</nuxt-link>
-        </span>
-      </div>
+        <div class="lang-switcher">
+          <span>
+            <nuxt-link class="lang" :to="switchLocalePath('en')">EN</nuxt-link>
+          </span>
+          <span class="lang">&#9679;</span>
+          <span>
+            <nuxt-link class="lang" :to="switchLocalePath('fr')">FR</nuxt-link>
+          </span>
+        </div>
       </div>
       <div class="col-6 info-button">
-      <RoundButton />
+        <ContactButton />
       </div>
     </div>
   </footer>
 </template>
 
 <script>
-import RoundButton from "@/components/icons/RoundButton";
+import ContactButton from "@/components/icons/ContactButton";
 
 export default {
   components: {
-    RoundButton
+    ContactButton
   }
 };
 </script>
@@ -33,7 +33,6 @@ export default {
 #app-footer {
   display: flex;
   align-items: center;
-  padding-bottom: 4rem!important;
 }
 
 .switcher {
@@ -42,13 +41,13 @@ export default {
 }
 
 .lang {
-  font-family: "Alice", serif;
+  font-family: $accent-font;
   font-size: 2.5rem;
   align-items: center;
   margin-right: 0.5rem;
-  color: #797979 !important;
+  color: $primary-lighter-50 !important;
   &.nuxt-link-exact-active {
-    color: #fff !important;
+    color: $light !important;
   }
 }
 

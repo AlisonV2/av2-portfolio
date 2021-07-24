@@ -1,21 +1,17 @@
 <template>
   <div class="row" id="#home-row">
-    <div class="col-12 col-lg-7">
+    <div class="col-12 col-xl-7">
       <h1>
         {{ $t("landing.hi") }}, <br />
         {{ $t("landing.im") }}<span class="name"> Alison</span>, <br />
         {{ $t("landing.webdev") }}
       </h1>
       <h3>{{ $t("landing.subtitle") }}</h3>
-      <nuxt-link :to="localePath('/contact')"
+      <nuxt-link :to="localePath('/projects')"
         ><AppButton>{{ $t("landing.btn") }}</AppButton></nuxt-link
       >
     </div>
-    <div class="col-12 col-lg-5 home-img-col">
-      <!-- <img :src="imageUrl"
-          alt="HomePage Image"
-          class="img-fluid home-img"
-        /> -->
+    <div class="col-12 col-xl-5 home-img-col">
       <HomeCode />
     </div>
   </div>
@@ -26,12 +22,6 @@ import HomeCode from "@/components/layout/images/HomeCode";
 export default {
   components: {
     HomeCode
-  },
-  data() {
-    return {
-      imageUrl:
-        "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    };
   }
 };
 </script>
