@@ -1,0 +1,101 @@
+h1,
+h2,
+h3 {
+  line-height: $line-height-xs;
+}
+
+h1 {
+  @include title;
+  color: $light;
+  font-size: 5rem;
+}
+
+h2 {
+  @include title;
+  color: $accent;
+  font-size: 3rem;
+}
+
+h3 {
+  @include title;
+  color: $primary-lighter-50;
+  font-size: 2rem;
+}
+
+h4 {
+  @include title;
+  color: $accent;
+  font-size: 2rem;
+}
+
+@include bp-up(sm) {
+  h1, h2, h3 {
+    line-height: $line-height-sm;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+}
+
+@include bp-up(md) {
+  h1, h2, h3 {
+    line-height: $line-height-md;
+  }
+  h1 {
+    font-size: 7.5rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+}
+
+@include bp-up(lg) {
+  h1, h2, h3 {
+    line-height: $line-height-lg;
+  }
+  h1 {
+    font-size: 8.5rem;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.8rem;
+  }
+}
+
+@include bp-up(xl) {
+  h1, h2, h3 {
+    line-height: $line-height-xl;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 7rem;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+}

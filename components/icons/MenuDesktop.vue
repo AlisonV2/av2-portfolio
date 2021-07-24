@@ -21,7 +21,7 @@
           data-name="Rectangle 5"
           width="5.046"
           height="5.046"
-          fill="#fff"
+          :fill="lightColor"
         />
         <rect
           id="Rectangle_6"
@@ -29,7 +29,7 @@
           width="23.013"
           height="5.046"
           transform="translate(7.569)"
-          fill="#fff"
+          :fill="lightColor"
         />
         <rect
           id="Rectangle_7"
@@ -37,7 +37,7 @@
           width="5.046"
           height="5.046"
           transform="translate(45.874 25.537) rotate(180)"
-          fill="#fff"
+          :fill="lightColor"
         />
         <rect
           id="Rectangle_8"
@@ -45,7 +45,7 @@
           width="23.013"
           height="5.046"
           transform="translate(38.304 25.537) rotate(180)"
-          fill="#fff"
+          :fill="lightColor"
         />
         <rect
           id="Rectangle_9"
@@ -53,15 +53,15 @@
           width="43.351"
           height="5.046"
           transform="translate(45.874 15.291) rotate(180)"
-          fill="#fff"
+          :fill="lightColor"
         />
       </g>
       <text
         id="Menu"
         transform="translate(1172.272 72.71)"
-        fill="#fff"
+        :fill="lightColor"
         font-size="28"
-        font-family="Alice-Regular, Alice"
+        :font-family="accentFont"
       >
         <tspan x="0" y="0">Menu</tspan>
       </text>
@@ -71,7 +71,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      lightColor: "#e8e8e8",
+      accentFont: "Alice-Regular, Alice"
+    }
+  }
+};
 </script>
 
 <style lang="scss"></style>

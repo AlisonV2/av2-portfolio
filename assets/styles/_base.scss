@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-
 html {
   font-size: 10px!important; // 1rem = 10px
 }
@@ -13,7 +10,7 @@ body, html {
 body {
   background: url('../images/dark-background.svg') no-repeat center center fixed;
   background-size: cover;
-  color: $light-color;
+  color: $light;
   font-family: $default-font;
 }
 
@@ -23,3 +20,4 @@ body {
     text-align: center;
   }
 }
+

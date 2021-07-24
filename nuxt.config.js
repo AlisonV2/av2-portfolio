@@ -43,7 +43,9 @@ export default {
 
   styleResources: {
     scss: [
-      "@/assets/styles/global/variables.scss",
+      "@/assets/styles/global/global.scss"
+      // "@/assets/styles/global/variables.scss",
+      // "@/assets/styles/global/fonts.scss"
     ]
   },
 

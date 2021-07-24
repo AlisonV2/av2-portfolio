@@ -13,7 +13,7 @@
       data-name="Rectangle 5"
       width="5.046"
       height="5.046"
-      fill="#fff"
+      :fill="lightColor"
     />
     <rect
       id="Rectangle_6"
@@ -21,7 +21,7 @@
       width="23.013"
       height="5.046"
       transform="translate(7.569)"
-      fill="#fff"
+      :fill="lightColor"
     />
     <rect
       id="Rectangle_7"
@@ -29,7 +29,7 @@
       width="5.046"
       height="5.046"
       transform="translate(45.874 25.537) rotate(180)"
-      fill="#fff"
+      :fill="lightColor"
     />
     <rect
       id="Rectangle_8"
@@ -37,7 +37,7 @@
       width="23.013"
       height="5.046"
       transform="translate(38.304 25.537) rotate(180)"
-      fill="#fff"
+      :fill="lightColor"
     />
     <rect
       id="Rectangle_9"
@@ -45,8 +45,18 @@
       width="43.351"
       height="5.046"
       transform="translate(45.874 15.291) rotate(180)"
-      fill="#fff"
+      :fill="lightColor"
     />
   </svg>
   </span>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      lightColor: "#e8e8e8",
+    }
+  }
+};
+</script>

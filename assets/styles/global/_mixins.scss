@@ -1,0 +1,9 @@
+/*!
+* Typography
+*/
+
+@mixin title
+{
+  font-family: $accent-font;
+  font-weight: $font-weight;
+}
