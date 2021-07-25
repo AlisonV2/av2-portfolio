@@ -37,7 +37,7 @@ export default {
       @include col-flex;
     }
     a {
-      padding-top: 2rem;
+      padding-top: 2.5rem;
       color: $dark-color;
       line-height: $line-height-md;
       justify-content: center;

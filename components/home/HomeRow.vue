@@ -13,7 +13,7 @@
       </nuxt-link>
       </div>
     </div>
-    <div class="col-12 col-xl-5 home-img-col">
+    <div class="col-12 col-xl-5 img-col">
       <HomeImg />
     </div>
   </div>
@@ -43,12 +43,12 @@ export default {
   color: $accent;
 }
 
-.home-img-col {
+.img-col {
   display: none;
 }
 
 @include bp-up(xl) {
-  .home-img-col {
+  .img-col {
     @include col-flex;
     align-items: flex-end;
   }
