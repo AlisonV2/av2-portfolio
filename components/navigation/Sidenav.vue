@@ -46,8 +46,8 @@
 </template>
 
 <script>
-import SidenavFooter from "@/components/layout/navigation/sidenav/SidenavFooter";
-import SocialBar from "@/components/layout/navigation/sidenav/SocialBar";
+import SidenavFooter from "@/components/navigation/sidenav/SidenavFooter";
+import SocialBar from "@/components/navigation/sidenav/SocialBar";
 import CloseIcon from "@/components/icons/CloseIcon";
 
 export default {

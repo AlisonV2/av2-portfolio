@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import Navbar from "@/components/layout/navigation/Navbar";
-import Sidenav from "@/components/layout/navigation/Sidenav";
-import AppFooter from "@/components/layout/footer/AppFooter";
+import Navbar from "@/components/navigation/Navbar";
+import Sidenav from "@/components/navigation/Sidenav";
+import AppFooter from "@/components/footer/AppFooter";
 
 export default {
   components: {
