@@ -9,6 +9,8 @@
         <p class="description">
           {{ $t("contact.description") }}
         </p>
+        <br />
+        <br />
         <p class="description">
           {{ $t("contact.social") }}
         </p>
@@ -34,7 +36,7 @@ export default {
 </script>
 
 <style lang="scss">
-@media screen and (min-width: 992px) {
+@include bp-up(lg) {
   .contact-form {
     display: flex;
     justify-content: flex-end;

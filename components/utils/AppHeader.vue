@@ -15,10 +15,4 @@ export default {};
 .app-header {
   margin-bottom: 2rem;
 }
-
-@include bp-up(lg) {
-  .app-header {
-    margin-bottom: 3rem;
-  }
-}
 </style>

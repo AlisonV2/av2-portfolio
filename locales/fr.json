@@ -31,9 +31,9 @@
   },
   "contact": {
     "pretitle": "Contact",
-      "title": "Me contacter",
-      "description": "Si vous souhaitez entrer en contact avec moi concernant un de vos projets, ou si vous avez la moindre question, n'hésitez pas à remplir le formulaire. Je reviendrai vers vous dans les plus brefs délais.",
-      "social": "Vous me trouverez également sur:",
+      "title": "Où me trouver",
+      "description": "Si vous souhaitez me contacter concernant l'un de vos projets, ou si vous avez la moindre question à tout autre sujet, n'hésitez pas à remplir le formulaire. Je reviendrai vers vous dans les plus brefs délais.",
+      "social": "Vous pouvez également me trouver sur:",
       "btn": "Envoyer",
       "form": {
           "name": "Nom",
