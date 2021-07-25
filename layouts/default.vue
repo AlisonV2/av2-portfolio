@@ -37,12 +37,24 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 60vh;
+}
+
+@include bp-up(md){
+  #content-wrapper {
+    min-height: 65vh;
+  }
 }
 
 @include bp-up(lg){
   #content-wrapper {
+    min-height: 70vh;
+  }
+}
+
+@include bp-up(xl){
+  #content-wrapper {
     overflow: hidden;
-    height: 70vh;
   }
 }
 </style>

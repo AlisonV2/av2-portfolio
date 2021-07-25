@@ -26,7 +26,7 @@ export default {
 <style lang="scss">
 .social-links {
   @include row-flex;
-  margin-top:5rem;
+  margin-top:6rem;
   justify-content: center;
   align-items: center;
   a {

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 v-if="error.statusCode === 404">Page not found</h1>
-    <h1 v-else>An error occurred</h1>
-    <NuxtLink to="/">Home page</NuxtLink>
+    <h1 v-if="error.statusCode === 404">{{ $t("error.404") }}</h1>
+    <h1 v-else>{{ $t("error.other") }}</h1>
+    <NuxtLink to="/">{{ $t("error.back") }}</NuxtLink>
   </div>
 </template>
 

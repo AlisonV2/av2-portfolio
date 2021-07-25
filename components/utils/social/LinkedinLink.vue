@@ -5,7 +5,7 @@
       target="_blank"
       rel="noopener noreferrer"
       v-if="$i18n.locale === 'en'"
-      v-tooltip="'Let\'s connect on LinkedIn'"
+      v-tooltip="'Let\'s connect on Linkedin'"
     >
       <font-awesome-icon :icon="linkedin" />
     </a>

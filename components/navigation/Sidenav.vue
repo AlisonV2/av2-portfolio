@@ -34,9 +34,6 @@
         <div class="col-6 divider">
           <hr size="2" />
         </div>
-        <div class="col-12 footer-text">
-          <h4>I have no idea</h4>
-        </div>
         <div class="col-12 copyright">
           <SidenavFooter />
         </div>
