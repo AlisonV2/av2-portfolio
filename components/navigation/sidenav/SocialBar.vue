@@ -2,16 +2,16 @@
   <div class="social-icons">
     <GithubLink />
     <LinkedinLink />
-    <MailLink />
     <MaltLink />
+    <MailLink />
   </div>
 </template>
 
 <script>
-import GithubLink from '@/components/utils/social/GithubLink';
-import LinkedinLink from '@/components/utils/social/LinkedinLink';
-import MailLink from '@/components/utils/social/MailLink';
-import MaltLink from '@/components/utils/social/MaltLink';
+import GithubLink from "@/components/utils/social/GithubLink";
+import LinkedinLink from "@/components/utils/social/LinkedinLink";
+import MailLink from "@/components/utils/social/MailLink";
+import MaltLink from "@/components/utils/social/MaltLink";
 
 export default {
   components: {
@@ -24,7 +24,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 .social-icons-col {
   display: none;
 }
@@ -41,7 +40,7 @@ export default {
       padding-top: 2rem;
       color: $dark-color;
       line-height: $line-height-md;
-      justify-content:center;
+      justify-content: center;
       svg {
         font-size: 4.5rem;
         &:hover {

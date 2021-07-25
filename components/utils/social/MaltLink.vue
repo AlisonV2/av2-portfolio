@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span class="malt-link">
     <a
       href="https://www.malt.fr/profile/alisonvandromme1"
       target="_blank"

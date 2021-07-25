@@ -1,68 +1,48 @@
 <template>
-<div>
-      <a
-      href="https://github.com/AlisonV2"
-      target="_blank"
-      rel="noopener noreferrer"
-      v-if="$i18n.locale === 'en'"
-      v-tooltip="'See my work on Github'"
-    >
-      <font-awesome-icon :icon="github" />
-    </a>
-    <a
-      href="https://github.com/AlisonV2"
-      target="_blank"
-      rel="noopener noreferrer"
-      v-if="$i18n.locale === 'fr'"
-      v-tooltip="'Mon profil Github'"
-    >
-      <font-awesome-icon :icon="github" />
-    </a>
-    <a
-      href="https://www.linkedin.com/in/alison-vandromme/"
-      target="_blank"
-      rel="noopener noreferrer"
-      v-if="$i18n.locale === 'en'"
-      v-tooltip="'Let\'s connect on LinkedIn'"
-    >
-      <font-awesome-icon :icon="linkedin" />
-    </a>
-    <a
-      href="https://www.linkedin.com/in/alison-vandromme/"
-      target="_blank"
-      rel="noopener noreferrer"
-      v-if="$i18n.locale === 'fr'"
-      v-tooltip="'Mon profil Linkedin'"
-    >
-      <font-awesome-icon :icon="linkedin" />
-    </a>
-    <a
-      href="https://www.malt.fr/profile/alisonvandromme1"
-      target="_blank"
-      rel="noopener noreferrer"
-      v-if="$i18n.locale === 'en'"
-      v-tooltip="'Hire me on Malt'"
-    >
-      <font-awesome-icon :icon="freelance" />
-    </a>
-    <a
-      href="https://www.malt.fr/profile/alisonvandromme1"
-      target="_blank"
-      rel="noopener noreferrer"
-      v-if="$i18n.locale === 'fr'"
-      v-tooltip="'M\'engager sur Malt'"
-    >
-      <font-awesome-icon :icon="freelance" />
-    </a>
-    </div>
+  <div class="social-links">
+    <GithubLink />
+    <LinkedinLink />
+    <MaltLink />
+    <MailLink />
+  </div>
 </template>
 
 <script>
-export default {
+import GithubLink from "@/components/utils/social/GithubLink";
+import LinkedinLink from "@/components/utils/social/LinkedinLink";
+import MailLink from "@/components/utils/social/MailLink";
+import MaltLink from "@/components/utils/social/MaltLink";
 
-}
+export default {
+  components: {
+    GithubLink,
+    LinkedinLink,
+    MailLink,
+    MaltLink
+  }
+};
 </script>
 
-<style>
+<style lang="scss">
+.social-links {
+  margin-top:5rem;
+  @include row-flex;
+  justify-content: center;
+  align-items: center;
+  a {
+  line-height: $line-height-md;
+  justify-content: center;
+  padding-top: 3rem;
+  svg {
+    font-size: 4.5rem;
+    color: $light;
+    border-color: $primary;
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+}
 
+  .github-link, .linkedin-link, .malt-link { margin-right: 3rem;}
 </style>

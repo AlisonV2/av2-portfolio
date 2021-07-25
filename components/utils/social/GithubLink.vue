@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span class="github-link">
      <a
       href="https://github.com/AlisonV2"
       target="_blank"

@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span class="linkedin-link">
     <a
       href="https://www.linkedin.com/in/alison-vandromme/"
       target="_blank"

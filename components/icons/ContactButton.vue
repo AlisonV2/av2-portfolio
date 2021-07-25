@@ -1,7 +1,14 @@
 <template>
   <div class="round-button-wrapper">
-    <nuxt-link class="round-button" :to="localePath('/contact')">
-    <font-awesome-icon :icon="contact"/>
+    <a
+      class="round-button"
+      href="mailto:alison.vandromme@outlook.fr"
+      v-if="currentPage"
+    >
+      <font-awesome-icon :icon="contact" />
+    </a>
+    <nuxt-link class="round-button" :to="localePath('/contact')" v-if="!currentPage">
+      <font-awesome-icon :icon="contact" />
     </nuxt-link>
   </div>
 </template>
@@ -10,9 +17,21 @@
 import { faComments } from "@fortawesome/free-regular-svg-icons";
 
 export default {
+  data() {
+    return {
+      currentPage: false
+    };
+  },
   computed: {
     contact() {
       return faComments;
+    },
+    watchPage() {
+      if (this.$route.path === "/contact/") {
+        return this.currentPage = true;
+      } else {
+        return this.currentPage = false;
+      }
     }
   }
 };
@@ -29,7 +48,7 @@ export default {
   font-size: 2.5rem;
   padding: 1.1rem;
   color: $primary;
-  display:block;
+  display: block;
   &:hover {
     background-color: $light;
     animation: pulse 1s;

@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span class="mail-link">
     <a
       href="mailto:alison.vandromme@outlook.fr"
       target="_blank"

@@ -33,17 +33,16 @@ export default {
 <style lang="scss">
 
 #content-wrapper {
-    height: 70vh;
     margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
 }
 
 @include bp-up(lg){
   #content-wrapper {
     overflow: hidden;
+    height: 70vh;
   }
 }
 </style>
