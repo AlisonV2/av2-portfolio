@@ -1,7 +1,14 @@
 <template>
   <div class="round-button-wrapper">
+    <!-- <a
+      class="round-button"
+      href="mailto:alison.vandromme@outlook.fr"
+      v-if="currentPage == true"
+    >
+      <font-awesome-icon :icon="contact" />
+    </a> -->
     <nuxt-link class="round-button" :to="localePath('/contact')">
-    <font-awesome-icon :icon="contact"/>
+      <font-awesome-icon :icon="contact" />
     </nuxt-link>
   </div>
 </template>
@@ -13,7 +20,7 @@ export default {
   computed: {
     contact() {
       return faComments;
-    }
+    },
   }
 };
 </script>
@@ -29,7 +36,7 @@ export default {
   font-size: 2.5rem;
   padding: 1.1rem;
   color: $primary;
-  display:block;
+  display: block;
   &:hover {
     background-color: $light;
     animation: pulse 1s;

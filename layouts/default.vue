@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import Navbar from "@/components/layout/navigation/Navbar";
-import Sidenav from "@/components/layout/navigation/Sidenav";
-import AppFooter from "@/components/layout/footer/AppFooter";
+import Navbar from "@/components/navigation/Navbar";
+import Sidenav from "@/components/navigation/Sidenav";
+import AppFooter from "@/components/footer/AppFooter";
 
 export default {
   components: {
@@ -33,17 +33,16 @@ export default {
 <style lang="scss">
 
 #content-wrapper {
-    height: 70vh;
     margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
 }
 
 @include bp-up(lg){
   #content-wrapper {
     overflow: hidden;
+    height: 70vh;
   }
 }
 </style>

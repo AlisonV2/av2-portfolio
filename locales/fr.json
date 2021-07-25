@@ -5,17 +5,11 @@
       "projects": "Projets",
       "contact": "Contact"
   },
-  "tooltip": {
-    "github": "Mon travail sur Github",
-    "linkedin": "Se connecter sur Linkedin",
-    "malt": "M'engager sur Malt",
-    "phone": "Ou simplement m'appeler"
-  },
   "landing": {
       "hi": "Bonjour",
       "im": "Je suis",
       "webdev": "Développeur web",
-      "subtitle": "Développeur Front-End/Développeur Back-End",
+      "subtitle": "Freelance | Développeur fullstack",
       "btn": "Mes projets",
       "typos": "Erreur de frappe?",
       "bp-up": "breakpoint above (traduire un commentaire?!)",
@@ -24,7 +18,7 @@
   "about": {
       "pretitle": "A propos",
       "title": "Moi en bref",
-      "description": "Je suis une licorne avec des pouvoirs magiques, Mon style est épileptique. Je suis une licorne avec une crinière swagguée, Elle est douce comme Beyoncé",
+      "description": "",
       "btn": "Mes projets",
       "download": "Mon CV"
   },
@@ -37,31 +31,14 @@
   },
   "contact": {
     "pretitle": "Contact",
-      "title": "Me contacter",
-      "description": "Si vous souhaitez me contacter concernant un projet ou pour toute autre question, n'hésitez pas à me contacter.",
+      "title": "Où me trouver",
+      "description": "Si vous souhaitez me contacter concernant l'un de vos projets, ou si vous avez la moindre question à tout autre sujet, n'hésitez pas à remplir le formulaire. Je reviendrai vers vous dans les plus brefs délais.",
+      "social": "Vous pouvez également me trouver sur:",
       "btn": "Envoyer",
-      "snack": {
-          "close": "Fermer",
-          "msg": "Message envoyé!"
-      },
       "form": {
           "name": "Nom",
           "email": "Email",
-          "msg": "Message",
-          "rules": {
-              "name": {
-                  "req": "Veuillez indiquer votre nom",
-                  "length": "Le champ doit contenir au minimum 10 caractères"
-              },
-              "email": {
-                  "req": "Veuillez indiquer un email",
-                  "valid": "L'adresse e-mail n'est pas valide"
-              },
-              "message": {
-                  "req": "Veuillez entrer un message",
-                  "length": "Le champ doit contenir au minimum 10 caractères"
-              }
-          }
+          "msg": "Message"
       }
   }
 }
