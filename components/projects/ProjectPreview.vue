@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-md-4 mb-4 project-cols">
+  <div class="col-12 col-lg-6 col-xl-4 mb-4 project-cols">
     <nuxt-link :to="localePath('/projects/' + id)">
       <div class="content">
         <div class="content-overlay"></div>

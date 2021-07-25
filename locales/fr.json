@@ -10,6 +10,9 @@
     "other": "Une erreur s'est produite.",
     "back": "Retour"
   },
+  "copyright": {
+    "rights": "Tous droits réservés"
+  },
   "landing": {
       "hi": "Bonjour",
       "im": "Je suis",

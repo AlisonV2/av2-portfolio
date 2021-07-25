@@ -10,6 +10,9 @@
     "other": "An error occurred.",
     "back": "Back to home"
   },
+  "copyright": {
+    "rights": "All rights reserved"
+  },
   "landing": {
       "hi": "Hi",
       "im": "I am",
