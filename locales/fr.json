@@ -5,7 +5,11 @@
       "projects": "Projets",
       "contact": "Contact"
   },
-  "error": {},
+  "error": {
+    "404": "Page introuvable",
+    "other": "Une erreur s'est produite.",
+    "back": "Retour"
+  },
   "landing": {
       "hi": "Bonjour",
       "im": "Je suis",
@@ -26,7 +30,6 @@
   "projects": {
       "pretitle": "A la une",
       "title": "Projets récents",
-      "description": "Je suis une licorne avec des pouvoirs magiques, Mon style est épileptique. Je suis une licorne avec une crinière swagguée, Elle est douce comme Beyoncé",
       "live": "Lien Direct",
       "back": "Retour aux projets"
   },
