@@ -26,9 +26,20 @@
   "about": {
       "pretitle": "About me",
       "title": "Me, Myself and I",
-      "description": "",
       "btn": "See my work",
-      "download": "My resume"
+      "download": "In short",
+      "p1": {
+        "title": "My background",
+        "text": "I’ve always been fascinated by sciences, technologies and evolution. My first interest has been how the human brain works and I deeply believe that its abilities are unlimited. I’ve always deeply cared about training my own brain and I view each day as an opportunity to learn, progress and become a better version of myself. "
+      },
+      "p2": {
+        "title": "My values",
+        "text": "Confucius said, “Choose a job you love, and you will never have to work a day in your life”. This quote perfectly sums up my choice regarding my career path. I’m truly passionate about my job and my love for learning makes me start working each day with great pleasure and impatience. "
+      },
+      "p3": {
+        "title": "My ambition",
+        "text": "My aim is to keep learning, and my ambition is simply to better myself, each day, at what I do.  In this mindset, I’ve put into place a technological watch and I see each and every project I take as an opportunity to outperform myself, however complex the demand might be. "
+      }
   },
   "projects": {
       "pretitle": "Selected work",

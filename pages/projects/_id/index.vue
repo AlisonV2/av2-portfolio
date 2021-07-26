@@ -8,26 +8,24 @@
         </div>
         <div class="project-preview">
           <p class="preview" v-if="$i18n.locale === 'en'">
-            {{ loadedPosts.preview.en }}
+            {{ loadedPosts.preview.en }} | Made in {{ loadedPosts.date.en }}
           </p>
-          <p class="preview" v-if="$i18n.locale === 'fr'">
-            {{ loadedPosts.preview.fr }}
+          <p class="text" v-if="$i18n.locale === 'fr'">
+            {{ loadedPosts.preview.fr }} | Réalisé en {{ loadedPosts.date.fr }}
           </p>
-          <!-- <p class="date" v-if="$i18n.locale === 'en'">Made in {{ loadedPosts.date.en }}</p>
-        <p class="date" v-if="$i18n.locale === 'fr'">Réalisé en {{ loadedPosts.date.fr }}</p> -->
         </div>
         <div class="project-description">
-          <p class="description" v-if="$i18n.locale === 'en'">
+          <p class="text" v-if="$i18n.locale === 'en'">
             <span class="emphasis">Demand: </span
             >{{ loadedPosts.description.en }}
           </p>
-          <p class="description" v-if="$i18n.locale === 'fr'">
+          <p class="text" v-if="$i18n.locale === 'fr'">
             <span class="emphasis">Demande: </span
             >{{ loadedPosts.description.fr }}
           </p>
         </div>
         <div class="project-stack">
-          <p class="description">
+          <p class="text">
             <span class="emphasis">Stack: </span>{{ loadedPosts.stack }}
           </p>
         </div>
@@ -86,36 +84,11 @@ export default {
     padding-right: 10rem;
     padding-top: 5rem;
   }
-  .description {
-    font-size: 2.5rem;
-  }
-  .emphasis {
-    font-size: 2.5rem;
-  }
 }
 
 .project-img {
   border-radius: 0.5rem;
   opacity: 0.9;
-}
-
-.description {
-  font-size: 1.8rem !important;
-  font-family: $default-font;
-  font-weight: 300;
-  color: $primary-lighter-80;
-  line-height: 3rem;
-}
-
-.emphasis {
-  font-weight: $font-weight-bold;
-  color: $accent;
-  font-size: 1.8rem;
-}
-
-.preview {
-  font-size: 2.5rem;
-  color: $primary-lighter-50;
 }
 
 .project-preview {
@@ -124,5 +97,19 @@ export default {
 
 .project-stack {
   margin-bottom: 4rem;
+}
+
+p.preview {
+  color: $primary-lighter-50;
+  font-size: 1.8rem;
+}
+
+p.text {
+  font-weight: $font-weight-light;
+}
+
+.emphasis {
+  color: $accent;
+  font-weight: $font-weight-bold;
 }
 </style>

@@ -37,13 +37,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
-}
-
-@include bp-up(md){
-  #content-wrapper {
     min-height: 65vh;
-  }
 }
 
 @include bp-up(lg){

@@ -28,4 +28,10 @@
   display: flex;
   justify-content: flex-end;
 }
+
+@include bp-down(md) {
+  form {
+    padding-top: 3rem;
+  }
+}
 </style>
