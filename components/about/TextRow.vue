@@ -1,11 +1,14 @@
 <template>
   <div class="row">
-    <div class="col-12 col-lg-10">
-      <p class="description">
-        {{ $t("about.description") }}
+    <div class="col-12">
+      <p class="text">
+        <span class="emphasis">{{ $t("about.p1.title") }}: </span>{{ $t("about.p1.text") }}
       </p>
-      <p class="description">
-        {{ $t("about.description") }}
+      <p class="text">
+        <span class="emphasis">{{ $t("about.p2.title") }}: </span>{{ $t("about.p2.text") }}
+      </p>
+      <p class="text">
+        <span class="emphasis">{{ $t("about.p3.title") }}: </span>{{ $t("about.p3.text") }}
       </p>
     </div>
   </div>
@@ -15,4 +18,18 @@
 export default {};
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+p.preview {
+  color: $primary-lighter-50;
+  font-size: 1.8rem;
+}
+
+p.text {
+  font-weight: $font-weight-light;
+}
+
+.emphasis {
+  color: $accent;
+  font-weight: $font-weight-bold;
+}
+</style>

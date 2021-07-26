@@ -6,12 +6,12 @@
           <template v-slot:pretitle>{{ $t("contact.pretitle") }}</template>
           <template v-slot:title>{{ $t("contact.title") }}</template>
         </AppHeader>
-        <p class="description">
+        <p class="text">
           {{ $t("contact.description") }}
         </p>
         <br />
         <br />
-        <p class="description">
+        <p class="text">
           {{ $t("contact.social") }}
         </p>
         <div><SocialDiv /></div>

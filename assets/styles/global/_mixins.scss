@@ -19,3 +19,8 @@
   flex-direction: row;
   align-items: center;
 }
+
+@mixin paragraph($color, $font-weight) {
+  font-size: 1.8rem !important;
+  font-family: $default-font;
+}

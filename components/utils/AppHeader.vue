@@ -20,7 +20,5 @@ export default {
 </script>
 
 <style lang="scss">
-.app-header {
-  margin-bottom: 2rem;
-}
+
 </style>

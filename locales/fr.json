@@ -25,10 +25,21 @@
   },
   "about": {
       "pretitle": "A propos",
-      "title": "Moi en bref",
-      "description": "",
+      "title": "Qui je suis",
       "btn": "Mes projets",
-      "download": "Mon CV"
+      "download": "Mon CV",
+      "p1": {
+        "title": "En bref",
+        "text": "J’ai toujours été fascinée par les sciences, les technologies et l’évolution. Mon intérêt premier a été le fonctionnement du cerveau humain et j’ai pour conviction que ses capacités sont illimitées. J’ai donc mis un point d’honneur à entrainer le mien et je pars du principe que chaque jour est une opportunité pour apprendre, progresser et évoluer. "
+      },
+      "p2": {
+        "title": "Mes valeurs",
+        "text": "« Choisis un travail que tu aimes, et tu n’auras pas à travailler un seul jour de ta vie ». Cette citation, attribuée à Confucius, résume parfaitement mon choix de carrière. Je suis passionnée par ce que je fais, et mon appétence pour l’apprentissage fait que chaque jour, je me mets au travail avec le plus grand plaisir et même une certaine impatience. "
+      },
+      "p3": {
+        "title": "Mon ambition",
+        "text": "Il me tient à cœur de continuer à apprendre et mon ambition est simplement d’être chaque jour plus compétente que la veille. C’est dans cette optique que j’ai mis en place une veille technologique et que chaque projet est pour moi une opportunité de me former et de me surpasser, quelle que soit la complexité de la demande. "
+      }
   },
   "projects": {
       "pretitle": "A la une",
