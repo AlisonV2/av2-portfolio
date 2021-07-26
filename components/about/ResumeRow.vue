@@ -2,7 +2,7 @@
    <div class="row resume-row">
       <div class="col-12 col-lg-6">
         <div class="link-wrapper">
-          <AppLink :href="''">{{ $t("about.download") }}</AppLink>
+          <!-- <AppLink :href="''">{{ $t("about.download") }}</AppLink> -->
         </div>
       </div>
       <div class="col-12 col-lg-6">
