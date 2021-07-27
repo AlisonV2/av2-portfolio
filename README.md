@@ -1,7 +1,8 @@
 ---
 Alison Vandromme : Portfolio built with Nuxtjs
 Website : www.alisonvandromme.com
-Licence: <a><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+Date: July 2021
+Licence: https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png
 ---
 
 # Alison Vandromme : Bilingual Portfolio
