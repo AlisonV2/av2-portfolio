@@ -15,7 +15,27 @@ export default {
         content: "Alison Vandromme : Full stack web developper and freelancer"
       },
       { name: "format-detection", content: "telephone=no" },
-      { name: "theme-color", content: "#1d1d1d"}
+      { name: "theme-color", content: "#1d1d1d"},
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Alison Vandromme's Portfolio"
+      },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "website"
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: process.env.BASE_URL
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "/brand-logo.svg"
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
