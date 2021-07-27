@@ -2,7 +2,7 @@
   <div class="row resume-row">
     <div class="col-12 col-lg-6">
       <div class="link-wrapper">
-        <!-- <AppLink :href="''">{{ $t("about.download") }}</AppLink> -->
+        <AppLink :href="downloadCv">{{ $t("about.download") }}</AppLink>
       </div>
     </div>
     <div class="col-12 col-lg-6">
@@ -16,7 +16,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      downloadCv: "https://res.cloudinary.com/dhlpkwga4/image/upload/v1627199738/AlisonVandromme-CV_p3bsmu.pdf"
+    }
+  }
+};
 </script>
 
 <style lang="scss">
