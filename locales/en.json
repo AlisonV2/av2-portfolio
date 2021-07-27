@@ -59,7 +59,11 @@
       "form": {
           "name": "Name",
           "email": "Email",
-          "msg": "Message"
+          "msg": "Message",
+          "rgpd": {
+            "acceptance": "I accept the",
+            "link": "Privacy Policy"
+          }
       }
   }
 }

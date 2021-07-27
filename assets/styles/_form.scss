@@ -30,6 +30,19 @@ form {
   }
 }
 
+.input-rgpd {
+  margin-left: 0;
+}
+
+label.rgpd {
+  font-size: 1.8rem;
+  color: $primary-lighter-50;
+}
+
+.form-check .form-check-input {
+  float: none;
+}
+
 span.placeholder {
   position: absolute;
   margin: 1.9rem 0;
