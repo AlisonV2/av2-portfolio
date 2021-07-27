@@ -30,7 +30,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="rgpd-link"
-          href="https://res.cloudinary.com/dhlpkwga4/image/upload/v1627383361/RGPD_wkga2n.pdf"
+          href="https://res.cloudinary.com/dhlpkwga4/image/upload/v1627401292/RGPD-Porfolio_aypdt7.pdf"
           >{{ $t("contact.form.rgpd.link") }}</a
         ></label
       >
