@@ -7,6 +7,7 @@
     width="45.874"
     height="25.537"
     viewBox="0 0 45.874 25.537"
+    alt="Menu Icon Mobile"
   >
     <rect
       id="Rectangle_5"

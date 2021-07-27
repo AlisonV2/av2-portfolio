@@ -1,12 +1,5 @@
 <template>
   <div class="round-button-wrapper">
-    <!-- <a
-      class="round-button"
-      href="mailto:alison.vandromme@outlook.fr"
-      v-if="currentPage == true"
-    >
-      <font-awesome-icon :icon="contact" />
-    </a> -->
     <nuxt-link class="round-button" :to="localePath('/contact')">
       <font-awesome-icon :icon="contact" />
     </nuxt-link>

@@ -3,7 +3,7 @@
     <nuxt-link :to="localePath('/projects/' + id)">
       <div class="content">
         <div class="content-overlay"></div>
-        <img class="content-image img-fluid" :src="thumbnail" />
+        <img class="content-image img-fluid" :alt="title" :src="thumbnail" />
         <div class="content-details fadeIn-top">
           <h5 class="content-title">
             {{ title }}
