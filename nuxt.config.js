@@ -12,10 +12,40 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Alison Vandromme : Full stack web developper"
+        content: "Alison Vandromme : Full stack web developper and freelancer"
       },
       { name: "format-detection", content: "telephone=no" },
-      { name: "theme-color", content: "#1d1d1d"}
+      { name: "theme-color", content: "#1d1d1d"},
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Alison Vandromme's Portfolio"
+      },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "website"
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://www.alisonvandromme.com"
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "/brand-logo.svg"
+      },
+      {
+        hid: "og:locale",
+        property: "og:locale",
+        content: "en_US"
+      },
+      {
+        hid: "og:locale:alternate",
+        property: "og:locale:alternate",
+        content: "fr_FR"
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -37,8 +67,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "~/assets/styles/app.scss",
-    '@fortawesome/fontawesome-svg-core/styles.css',
+    "~/assets/styles/app.scss"
 
   ],
 
@@ -74,7 +103,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "nuxt-i18n",
-    '@nuxtjs/dotenv',
+    "@nuxtjs/dotenv",
+    "@nuxtjs/robots",
     "@nuxtjs/sitemap"
   ],
 
