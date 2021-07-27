@@ -12,10 +12,19 @@
       <textarea name="message" required />
       <span class="placeholder">{{ $t("contact.form.msg") }}</span>
     </div>
+    <div class="form-check form-check-inline input-rgpd">
+      <input class="form-check-input" type="checkbox" value="" />
+      <label class="rgpd" v-if="$i18n.locale === 'en'">
+        {{ $t("contact.form.rgpd.acceptance") }}
+        <a class="rgpd-link" href="https://www.termsfeed.com/live/c6028ffb-74f5-4c9b-894a-f82221d71929">{{ $t("contact.form.rgpd.link") }}</a></label
+      >
+            <label class="rgpd" v-if="$i18n.locale === 'fr'">
+        {{ $t("contact.form.rgpd.acceptance") }}
+        <a class="rgpd-link" href="https://res.cloudinary.com/dhlpkwga4/image/upload/v1627383361/RGPD_wkga2n.pdf">{{ $t("contact.form.rgpd.link") }}</a></label
+      >
+    </div>
     <div class="form-btn">
-      <AppButton type="submit">{{
-        $t("contact.btn")
-      }}</AppButton>
+      <AppButton type="submit">{{ $t("contact.btn") }}</AppButton>
     </div>
   </form>
 </template>
@@ -28,6 +37,15 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.input-rgpd {
+  margin-bottom: 2rem;
+}
+
+.rgpd-link {
+  color: $accent!important;
+  font-family: $default-font;
+  }
 
 @include bp-down(md) {
   form {
