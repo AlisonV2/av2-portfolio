@@ -36,6 +36,16 @@ export default {
         property: "og:image",
         content: "/brand-logo.svg"
       },
+      {
+        hid: "og:locale",
+        property: "og:locale",
+        content: "en_US"
+      },
+      {
+        hid: "og:locale:alternate",
+        property: "og:locale:alternate",
+        content: "fr_FR"
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
