@@ -1,34 +1,33 @@
 ---
-Alison Vandromme : Portfolio built with Nuxt SSR
-Deployed website : https://www.alisonvandromme.com
+Alison Vandromme : Portfolio built with Nuxtjs
+Website : www.alisonvandromme.com
+Licence: <a><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
 ---
 
 # Alison Vandromme : Bilingual Portfolio
 
-## What I used
+## Features
 
-- Nuxt.js SSR
-- Vue-i18n
-- Style resources
-- CI/CD pipeline on Vercel
-- Firebase Database
-- Axios
-- V-tooltips
-- Fontawesome Icons
-- Bootstrap 5
-## Build Setup
+- Server side rendering
+- Internationalisation
+- Continuous integration and deployment
+- Firebase integration
 
-```bash
-# install dependencies
-$ yarn install
+## Dependencies
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+- [nuxt-i18n](https://github.com/nuxt-community/i18n-module)
+- [axios](https://github.com/nuxt-community/axios-module)
+- [style resources](https://github.com/nuxt-community/style-resources-module)
+- [nuxt-dotenv](https://github.com/nuxt-community/dotenv-module)
+- [nuxt-sitemap](https://github.com/nuxt-community/sitemap-module)
+- [v-tooltip](https://github.com/Akryum/v-tooltip)
+- [vercel-builder](https://github.com/nuxt/vercel-builder)
+- [fontawesome](https://github.com/nuxt-community/fontawesome-module#readme)
+- [bootstrap](https://github.com/twbs/bootstrap)
+- [sass](https://github.com/sass/sass) & [sass-loader](https://github.com/webpack-contrib/sass-loader)
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+## License
 
-# generate static project
-$ yarn generate
-```
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License <br>
+<br>
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>.
