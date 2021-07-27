@@ -29,7 +29,7 @@ export default {
       {
         hid: "og:url",
         property: "og:url",
-        content: process.env.BASE_URL
+        content: "https://www.alisonvandromme.com"
       },
       {
         hid: "og:image",
@@ -57,8 +57,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "~/assets/styles/app.scss",
-    '@fortawesome/fontawesome-svg-core/styles.css',
+    "~/assets/styles/app.scss"
 
   ],
 
