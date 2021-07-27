@@ -136,6 +136,11 @@ export default {
     i18n: true
   },
 
+  robots: {
+    UserAgent: '*',
+    Disallow: ''
+  },
+
   router: {
     // easily spot nuxt-link without a trailing slash, because they will return a 404
     trailingSlash: true

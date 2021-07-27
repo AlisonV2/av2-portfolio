@@ -5,6 +5,7 @@
     width="146.277"
     height="32"
     viewBox="0 0 146.277 32"
+    alt="Menu Icon Desktop"
   >
     <g
       id="Group_2072"

@@ -8,6 +8,7 @@
     preserveAspectRatio="xMidYMid meet"
     class="svg-inline--fa fa-w-14"
     role="img"
+    alt="Malt Icon"
   >
     <g
       transform="translate(0.000000,76.000000) scale(0.100000,-0.100000)"
