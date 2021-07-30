@@ -1,7 +1,7 @@
 <template>
   <span class="mail-link">
     <a
-      href="mailto:alison.vandromme@outlook.fr"
+      href="mailto:alisonvandromme.pro@gmail.com"
       target="_blank"
       rel="noopener noreferrer"
       v-if="$i18n.locale === 'en'"
