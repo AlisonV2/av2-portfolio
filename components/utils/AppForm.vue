@@ -20,7 +20,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="rgpd-link"
-          href="https://www.termsfeed.com/live/c6028ffb-74f5-4c9b-894a-f82221d71929"
+          href="https://res.cloudinary.com/dhlpkwga4/image/upload/v1627635549/GDPR_r9f1nt.pdf"
           >{{ $t("contact.form.rgpd.link") }}</a
         ></label
       >
@@ -30,7 +30,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="rgpd-link"
-          href="https://res.cloudinary.com/dhlpkwga4/image/upload/v1627401292/RGPD-Porfolio_aypdt7.pdf"
+          href="https://res.cloudinary.com/dhlpkwga4/image/upload/v1627635542/RGPD_vbf3kf.pdf"
           >{{ $t("contact.form.rgpd.link") }}</a
         ></label
       >
