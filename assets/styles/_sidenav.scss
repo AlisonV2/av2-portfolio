@@ -3,7 +3,7 @@
   list-style: none;
   &:hover,
   &.nuxt-link-exact-active {
-    color: $primary-color !important;
+    color: $accent!important;
   }
 }
 
@@ -13,7 +13,7 @@
     list-style: none;
     &:hover,
     &.nuxt-link-exact-active {
-      color: $primary-color !important;
+      color: $accent !important;
     }
   }
 }

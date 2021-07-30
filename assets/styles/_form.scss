@@ -20,10 +20,10 @@ form {
       font-weight: 500;
       font-size: 1.8rem;
       width: 100%;
-      color: $light-color;
+      color: $light;
       padding: 1.5rem 1.5rem;
       border-radius: 0.5rem;
-      border: 1px solid $secondary-text;
+      border: 1px solid $primary-lighter-50;
       outline: none;
       background-color: transparent;
     }
@@ -47,7 +47,7 @@ span.placeholder {
   position: absolute;
   margin: 1.9rem 0;
   padding: 0 0.5rem;
-  color: $secondary-text;
+  color: $primary-lighter-50;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
@@ -68,13 +68,13 @@ div.input-block textarea:focus + span.placeholder {
 
 div.input-block input:focus,
 div.input-block textarea:focus {
-  color: $primary-color;
-  border-color: $primary-color;
+  color: $accent;
+  border-color: $accent;
 }
 
 div.input-block input:focus + span.placeholder,
 div.input-block textarea:focus + span.placeholder {
-  color: $primary-color;
+  color: $accent;
 }
 
 .form-btn {

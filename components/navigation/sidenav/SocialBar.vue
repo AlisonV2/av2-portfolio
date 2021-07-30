@@ -38,13 +38,13 @@ export default {
     }
     a {
       padding-top: 2.5rem;
-      color: $dark-color;
+      color: $primary;
       line-height: $line-height-md;
       justify-content: center;
       svg {
         font-size: 4.5rem;
         &:hover {
-          color: $primary-color;
+          color: $accent;
         }
       }
     }
