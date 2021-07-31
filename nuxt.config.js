@@ -56,6 +56,11 @@ export default {
       },
       {
         rel: "icon",
+        sizes: "32x32",
+        href: "/favicon-32x32.png"
+      },
+      {
+        rel: "icon",
         type: "image/png",
         sizes: "16x16",
         href: "/favicon-16x16.png"
@@ -95,7 +100,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     "@nuxt/components",
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/pwa'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
