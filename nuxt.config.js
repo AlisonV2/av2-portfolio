@@ -103,6 +103,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "nuxt-i18n",
+    'nuxt-purgecss',
     "@nuxtjs/dotenv",
     "@nuxtjs/robots",
     "@nuxtjs/sitemap"
