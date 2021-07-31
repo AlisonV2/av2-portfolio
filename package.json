@@ -25,6 +25,7 @@
     "fibers": "^5.0.0",
     "nuxt": "^2.15.7",
     "nuxt-i18n": "^6.27.3",
+    "nuxt-purgecss": "^1.0.0",
     "sass": "^1.35.2",
     "sass-loader": "^10.1.1",
     "v-tooltip": "^2.1.3"
