@@ -2,7 +2,8 @@
   <div class="row resume-row">
     <div class="col-12 col-lg-6">
       <div class="link-wrapper">
-        <AppLink :href="downloadCv">{{ $t("about.download") }}</AppLink>
+        <AppLink :href="downloadCv" v-if="$i18n.locale === 'fr'">{{ $t("about.download") }}</AppLink>
+        <AppLink :href="downloadResume" v-if="$i18n.locale === 'en'">{{ $t("about.download") }}</AppLink>
       </div>
     </div>
     <div class="col-12 col-lg-6">
@@ -19,7 +20,8 @@
 export default {
   data() {
     return {
-      downloadCv: "https://res.cloudinary.com/dhlpkwga4/image/upload/v1627199738/AlisonVandromme-CV_p3bsmu.pdf"
+      downloadCv: "https://res.cloudinary.com/dhlpkwga4/image/upload/v1627729677/AlisonVandromme-CV_b1tzbq.pdf",
+      downloadResume: "https://res.cloudinary.com/dhlpkwga4/image/upload/v1627729856/AlisonVandromme-Resume_tw1f8l.pdf"
     }
   }
 };
