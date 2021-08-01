@@ -13,10 +13,12 @@ Licence: CC BY-NC-SA 4.0
 - Internationalisation
 - Continuous integration and deployment
 - Firebase integration
+- PWA integration
 
 ## Dependencies
 
 - [nuxt-i18n](https://github.com/nuxt-community/i18n-module)
+- [nuxt-pwa](https://github.com/nuxt-community/pwa-module)
 - [axios](https://github.com/nuxt-community/axios-module)
 - [style resources](https://github.com/nuxt-community/style-resources-module)
 - [nuxt-dotenv](https://github.com/nuxt-community/dotenv-module)
