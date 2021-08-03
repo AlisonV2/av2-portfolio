@@ -10,10 +10,10 @@ License: CC BY-NC-SA 4.0
 ## Features
 
 - Server side rendering
-- Internationalisation
-- Continuous integration and deployment
+- Internationalization
 - Firebase integration
 - PWA integration
+- Vercel CI/CD Pipeline
 
 ## Dependencies
 
