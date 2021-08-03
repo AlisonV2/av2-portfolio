@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@include bp-up(md) {
   form {
     width: 80%;
   }

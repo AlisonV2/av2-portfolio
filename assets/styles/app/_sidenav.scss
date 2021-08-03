@@ -7,7 +7,7 @@
   }
 }
 
-@media screen and (min-width: 960px) {
+@include bp-up(lg) {
   .nav-item a {
     font-size: 5rem;
     list-style: none;
