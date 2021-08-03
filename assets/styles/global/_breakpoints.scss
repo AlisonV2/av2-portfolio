@@ -7,7 +7,7 @@ $breakpoints: (
   xxl: 1400px
 );
 
-// @include media-above(sm) {}
+// @include bp-up(sm) {}
 @mixin bp-up($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     $breakpoint-value: map-get($breakpoints, $breakpoint);
@@ -19,7 +19,7 @@ $breakpoints: (
   }
 }
 
-// @include respond-below(sm) {}
+// @include bp-down(sm) {}
 @mixin bp-down($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     $breakpoint-value: map-get($breakpoints, $breakpoint);
@@ -31,7 +31,7 @@ $breakpoints: (
   }
 }
 
-// @include respond-between(sm, md) {}
+// @include bp-between(sm, md) {}
 @mixin bp-between($lower, $upper) {
   @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
     $lower-breakpoint: map-get($breakpoints, $lower);

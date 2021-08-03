@@ -20,7 +20,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="rgpd-link"
-          href="https://res.cloudinary.com/dhlpkwga4/image/upload/v1627635549/GDPR_r9f1nt.pdf"
+          :href="Gdpr"
           >{{ $t("contact.form.rgpd.link") }}</a
         ></label
       >
@@ -30,7 +30,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="rgpd-link"
-          href="https://res.cloudinary.com/dhlpkwga4/image/upload/v1627635542/RGPD_vbf3kf.pdf"
+          :href="Rgpd"
           >{{ $t("contact.form.rgpd.link") }}</a
         ></label
       >
@@ -41,7 +41,16 @@
   </form>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      Rgpd: "https://res.cloudinary.com/dhlpkwga4/image/upload/v1627635542/RGPD_vbf3kf.pdf",
+      Gdpr: "https://res.cloudinary.com/dhlpkwga4/image/upload/v1627635549/GDPR_r9f1nt.pdf"
+    }
+  }
+};
+</script>
 
 <style lang="scss">
 .form-btn {
