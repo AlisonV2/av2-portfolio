@@ -8,7 +8,7 @@
         </AppHeader>
       </div>
     </div>
-    <ProjectList :posts="loadedPosts" />
+    <ProjectList :projects="loadedProjects" />
   </div>
 </template>
 
@@ -20,8 +20,8 @@ export default {
     ProjectList
   },
   computed: {
-    loadedPosts() {
-      return this.$store.getters.loadedPosts;
+    loadedProjects() {
+      return this.$store.getters.loadedProjects;
     }
   }
 };

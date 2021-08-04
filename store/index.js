@@ -1,42 +1,47 @@
 export const state = () => ({
-    loadedPosts: [],
+  loadedProjects: [],
 });
 
 export const mutations = {
-    setPosts(state, posts) {
-        state.loadedPosts = posts;
-    },
-    addPost(state, posts) {
-        state.loadedPosts.push(posts);
-    },
-    editPost(state, editedPost){
-        const postIndex = state.loadedPosts.findIndex(
-            posts => posts.id === editedPost.id
-        );
-        state.loadedPosts[postIndex] = editedPost;
-    },
+  setProjects(state, projects) {
+    state.loadedProjects = projects;
+},
+viewProject(state, editedProject){
+  const projectIndex = state.loadedProjects.findIndex(
+      projects => projects.id === editedProject.id
+  );
+  state.loadedProjects[projectIndex] = editedProject;
+}
 };
 
 export const actions = {
-    nuxtServerInit(vuexContext, context) {
-        return context.app.$axios
-            .$get('/posts.json')
-            .then(data => {
-                const postsArray = [];
-                for (const key in data) {
-                    postsArray.push({...data[key], id: key})
-                }
-                vuexContext.commit('setPosts', postsArray)
-            })
-            .catch(e => context.error(e));
-    },
-    setPosts(vuexContext, posts) {
-        vuexContext.commit('setPosts', posts);
-    },
+  nuxtServerInit(vuexContext, context) {
+    return context.app.$axios
+        .$get('/posts.json')
+        .then(data => {
+            const projectsArray = [];
+            for (const key in data) {
+                projectsArray.push({...data[key], id: key})
+            }
+            vuexContext.commit('setProjects', projectsArray)
+        })
+        .catch(e => context.error(e));
+},
+setProjects(vuexContext, projects) {
+  vuexContext.commit('setProjects', projects);
+},
+viewProject(vuexContext, editedProject) {
+  return this.$axios
+      .$put('/posts/' + context.params.id, editedProject)
+      .then(result => {
+          vuexContext.commit('viewProject', editedProject)
+      })
+      .catch(e => console.log(e));
+},
 };
 
 export const getters = {
-    loadedPosts(state) {
-        return state.loadedPosts;
-    }
+  loadedProjects(state) {
+    return state.loadedProjects;
+}
 };
