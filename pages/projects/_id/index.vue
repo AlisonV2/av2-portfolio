@@ -4,41 +4,41 @@
       <div class="col-12 col-xl-6 project-col">
         <div class="project-header">
           <h4>{{ $t("projects.pretitle") }}</h4>
-          <h2>{{ loadedPosts.title }}</h2>
+          <h2>{{ loadedProjects.title }}</h2>
         </div>
         <div class="project-preview">
           <p class="preview" v-if="$i18n.locale === 'en'">
-            {{ loadedPosts.preview.en }} | Made in {{ loadedPosts.date.en }}
+            {{ loadedProjects.preview.en }} | Made in {{ loadedProjects.date.en }}
           </p>
           <p class="text" v-if="$i18n.locale === 'fr'">
-            {{ loadedPosts.preview.fr }} | Réalisé en {{ loadedPosts.date.fr }}
+            {{ loadedProjects.preview.fr }} | Réalisé en {{ loadedProjects.date.fr }}
           </p>
         </div>
         <div class="project-description">
           <p class="text" v-if="$i18n.locale === 'en'">
             <span class="emphasis">Demand: </span
-            >{{ loadedPosts.description.en }}
+            >{{ loadedProjects.description.en }}
           </p>
           <p class="text" v-if="$i18n.locale === 'fr'">
             <span class="emphasis">Demande: </span
-            >{{ loadedPosts.description.fr }}
+            >{{ loadedProjects.description.fr }}
           </p>
         </div>
         <div class="project-stack">
           <p class="text">
-            <span class="emphasis">Stack: </span>{{ loadedPosts.stack }}
+            <span class="emphasis">Stack: </span>{{ loadedProjects.stack }}
           </p>
         </div>
         <div>
-          <AppLink :href="loadedPosts.liveLink">{{
+          <AppLink :href="loadedProjects.liveLink">{{
             $t("projects.live")
           }}</AppLink>
         </div>
       </div>
       <div class="col-12 col-xl-6">
         <img
-          :src="loadedPosts.thumbnail"
-          :alt="loadedPosts.title"
+          :src="loadedProjects.thumbnail"
+          :alt="loadedProjects.title"
           class="img-fluid project-img"
         />
         <BackLink />
@@ -58,14 +58,14 @@ export default {
   asyncData(context) {
     if (context.payload) {
       return {
-        loadedPosts: context.payload.postData
+        loadedProjects: context.payload.projectData
       };
     }
     return context.app.$axios
       .$get("/posts/" + context.params.id + ".json")
       .then(data => {
         return {
-          loadedPosts: data
+          loadedProjects: data
         };
       })
       .catch(e => context.error(e));
