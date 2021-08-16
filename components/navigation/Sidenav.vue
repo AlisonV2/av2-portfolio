@@ -6,10 +6,7 @@
         <div class="col-12 close-icon-wrapper">
           <CloseIcon @click="closeSidenav" />
         </div>
-        <div class="col-12 col-sm-6 social-icons-col">
-          <SocialBar />
-        </div>
-        <div class="col-12 col-sm-6 nav-menu">
+        <div class="col-12 nav-menu">
           <ul class="nav-list" @click="closeSidenav">
             <li class="nav-item">
               <nuxt-link :to="localePath('/')">{{ $t("path.home") }}</nuxt-link>
@@ -31,8 +28,8 @@
             </li>
           </ul>
         </div>
-        <div class="col-6 divider">
-          <hr size="2" />
+        <div class="col-12 social-icons-col">
+          <SocialDiv />
         </div>
         <div class="col-12 copyright">
           <SidenavFooter />
@@ -44,7 +41,7 @@
 
 <script>
 import SidenavFooter from "@/components/navigation/sidenav/SidenavFooter";
-import SocialBar from "@/components/navigation/sidenav/SocialBar";
+import SocialDiv from "@/components/utils/SocialDiv";
 import CloseIcon from "@/components/icons/CloseIcon";
 
 export default {
@@ -52,7 +49,7 @@ export default {
   emits: ["closeSidenav"],
   components: {
     SidenavFooter,
-    SocialBar,
+    SocialDiv,
     CloseIcon
   },
   props: {
@@ -88,7 +85,9 @@ export default {
   padding: 2rem 0rem;
   height: 100vh;
   width: 100%;
+  background: url('../../assets/images/light-background.svg') no-repeat;
   background-color: $accent-lighter-90;
+  background-size: cover;
   z-index: 10000;
   position: fixed;
   top: 0;
@@ -125,6 +124,8 @@ export default {
 .nav-menu {
   @include col-flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   line-height: $line-height-lg;
 }
 
@@ -144,11 +145,6 @@ export default {
     .close-icon {
       height: 4rem;
     }
-  }
-  .social-icons,
-  .footer-text,
-  .divider {
-    display: none;
   }
 }
 </style>

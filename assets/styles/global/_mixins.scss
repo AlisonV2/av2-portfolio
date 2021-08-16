@@ -24,3 +24,12 @@
   flex-direction: row;
   align-items: center;
 }
+
+@mixin link($color, $font-family, $hover-color) {
+   text-decoration: none;
+   color : $color;
+   font-family: $font-family;
+   &:hover {
+     color: $hover-color;
+   }
+}

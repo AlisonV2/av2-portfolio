@@ -1,7 +1,8 @@
 .nav-item a {
+  @include link($primary, $accent-font, $accent);
+  font-size: 1.8rem;
   font-size: 3rem;
   list-style: none;
-  &:hover,
   &.nuxt-link-exact-active {
     color: $accent!important;
   }

@@ -30,22 +30,17 @@ export default {
 </script>
 
 <style lang="scss">
-#app-footer {
-  display: flex;
-  align-items: center;
-}
-
-.switcher {
+#app-footer,
+.switcher  {
   display: flex;
   align-items: center;
 }
 
 .lang {
-  font-family: $accent-font;
+  @include link($primary-lighter-50, $accent-font, $light);
   font-size: 2.5rem;
   align-items: center;
   margin-right: 0.5rem;
-  color: $primary-lighter-50 !important;
   &.nuxt-link-exact-active {
     color: $light !important;
   }
