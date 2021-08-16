@@ -12,7 +12,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Alison Vandromme : Full stack web developper and freelancer"
+        content: "Alison Vandromme : Full stack web developper based in Bordeaux"
       },
       { name: "format-detection", content: "telephone=no" },
       { name: "theme-color", content: "#1d1d1d"},
@@ -20,6 +20,11 @@ export default {
         hid: "og:title",
         property: "og:title",
         content: "Alison Vandromme's Portfolio"
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "Alison Vandromme - Fullstack web developer based in Bordeaux"
       },
       {
         hid: "og:type",
@@ -34,7 +39,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "/brand-logo.svg"
+        content: "https://res.cloudinary.com/dhlpkwga4/image/upload/v1627369853/logo-mobile_tha1zh.png"
       },
       {
         hid: "og:locale",
