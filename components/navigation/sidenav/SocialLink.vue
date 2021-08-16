@@ -3,7 +3,6 @@
       :href="link"
       target="_blank"
       rel="noopener noreferrer"
-      :v-tooltip="tooltip"
     >
       <font-awesome-icon :icon="icon" />
     </a>
@@ -11,7 +10,7 @@
 
 <script>
 export default {
-    props: ['icon', 'tooltip', 'link']
+    props: ['icon', 'link']
 }
 </script>
 
