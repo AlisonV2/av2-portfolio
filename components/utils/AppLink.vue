@@ -23,6 +23,11 @@ export default {
 </script>
 
 <style lang="scss">
+.project-link {
+  @include link($light, $accent-font, $accent);
+  font-size: 2.5rem;
+  padding: 2rem;
+}
 
 .live-link {
   justify-content: center;
