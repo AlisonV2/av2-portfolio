@@ -86,6 +86,7 @@ export default {
   height: 100vh;
   width: 100%;
   background: url('../../assets/images/light-background.svg') no-repeat;
+  background-color: $accent-lighter-90;
   background-size: cover;
   z-index: 10000;
   position: fixed;

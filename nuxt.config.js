@@ -95,8 +95,7 @@ export default {
       mode: "client"
     },
     "~/plugins/core-components.js",
-    '~plugins/fontawesome.js',
-    '~plugins/tooltips.js'
+    '~plugins/fontawesome.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

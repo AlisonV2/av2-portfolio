@@ -1,9 +1,7 @@
 <template>
-  <div class="round-button-wrapper">
     <nuxt-link class="round-button" :to="localePath('/contact')">
       <font-awesome-icon :icon="contact" />
     </nuxt-link>
-  </div>
 </template>
 
 <script>
@@ -29,7 +27,6 @@ export default {
   font-size: 2.5rem;
   padding: 1.1rem;
   color: $primary;
-  display: block;
   &:hover {
     background-color: $light;
     animation: pulse 1s;

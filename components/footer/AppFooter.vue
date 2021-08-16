@@ -30,12 +30,8 @@ export default {
 </script>
 
 <style lang="scss">
-#app-footer {
-  display: flex;
-  align-items: center;
-}
-
-.switcher {
+#app-footer,
+.switcher  {
   display: flex;
   align-items: center;
 }
