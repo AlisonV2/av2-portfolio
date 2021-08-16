@@ -1,5 +1,5 @@
 <template>
-  <div class="social-links">
+  <div class="social-div" :class="socialStyle">
     <GithubLink />
     <LinkedinLink />
     <MaltLink />
@@ -19,12 +19,18 @@ export default {
     LinkedinLink,
     MailLink,
     MaltLink
+  },
+  props: {
+    socialStyle: {
+      type: String,
+      default: ''
+    }
   }
 };
 </script>
 
 <style lang="scss">
-.social-links {
+.social-div {
   @include row-flex;
   margin-top:6rem;
   justify-content: center;
@@ -35,14 +41,23 @@ export default {
   padding-top: 3rem;
   svg {
     font-size: 4.5rem;
-    color: $light;
-    border-color: $primary;
+    color: $primary;
     &:hover {
-      color: $accent;
+      color: $accent!important;
     }
   }
 }
 }
 
-  .github-link, .linkedin-link, .malt-link { margin-right: 3rem;}
+.github-link,
+.linkedin-link,
+.malt-link {
+  margin-right: 3rem;
+}
+
+.contact-social {
+    svg {
+      color: $light!important;
+    }
+}
 </style>

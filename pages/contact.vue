@@ -14,7 +14,7 @@
         <p class="text">
           {{ $t("contact.social") }}
         </p>
-        <div><SocialDiv /></div>
+        <div><SocialDiv social-style="contact-social"/></div>
       </div>
       <div class="col-12 col-lg-6 contact-form">
         <AppForm />
@@ -25,7 +25,7 @@
 
 <script>
 import AppForm from "@/components/utils/AppForm";
-import SocialDiv from "@/components/contact/SocialDiv";
+import SocialDiv from "@/components/utils/SocialDiv";
 
 export default {
   components: {
