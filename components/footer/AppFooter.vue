@@ -37,11 +37,10 @@ export default {
 }
 
 .lang {
-  font-family: $accent-font;
+  @include link($primary-lighter-50, $accent-font, $light);
   font-size: 2.5rem;
   align-items: center;
   margin-right: 0.5rem;
-  color: $primary-lighter-50 !important;
   &.nuxt-link-exact-active {
     color: $light !important;
   }
