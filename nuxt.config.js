@@ -39,7 +39,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://res.cloudinary.com/dhlpkwga4/image/upload/v1627369853/logo-mobile_tha1zh.png"
+        content: "https://res.cloudinary.com/dhlpkwga4/image/upload/v1629116246/M2_vvtvxa.jpg"
       },
       {
         hid: "og:locale",
