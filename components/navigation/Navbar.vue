@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <nav class="navbar fixed-top" :class="{ 'on-scroll': !topOfPage}">
     <div class="container navbar-container">
     <nuxt-link :to="localePath('/')" class="navbar-brand">
       <BrandDesktop />
@@ -29,18 +29,44 @@ export default {
     BrandMobile
   },
   emits: ["toggleSidenav"],
+  data() {
+    return {
+      topOfPage: true
+    }
+  },
   methods: {
     toggleSidenav() {
       this.$emit("toggleSidenav");
+    },
+    handleScroll(){
+      if(window.pageYOffset > 0) {
+        if (this.topOfPage) this.topOfPage = false
+      } else {
+        if (!this.topOfPage) this.topOfPage = true
+      }
     }
-  }
+  },
+    beforeMount() {
+      window.addEventListener('scroll', this.handleScroll)
+  },
+    beforeUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
+  },
 };
 </script>
 
 <style lang="scss">
-
-.navbar-container {
-  padding-top: 3rem;
+nav {
+  background-color: transparent;
+  width: 100%;
+  transition: all .2s ease-in-out;
+  &.on-scroll {
+    box-shadow: 0 0 1rem $accent;
+    background-color: $primary;
+  }
+  .navbar-container {
+  padding: 1.5rem 2rem;
+  }
 }
 
 .brand-desktop,
@@ -54,7 +80,7 @@ export default {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@include bp-up(md) {
   .brand-desktop,
   .menu-desktop {
     display: inline-block;

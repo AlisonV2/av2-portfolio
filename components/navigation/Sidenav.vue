@@ -121,6 +121,7 @@ export default {
   justify-content: flex-end;
   align-items: center;
 }
+
 .nav-menu {
   @include col-flex;
   justify-content: center;
@@ -140,11 +141,15 @@ export default {
 @include bp-down(sm) {
   .nav-menu {
     text-align: center;
+    padding-top: 3rem;
   }
   .close-icon-wrapper {
     .close-icon {
       height: 4rem;
     }
+  }
+  .sidenav-footer {
+      padding-bottom: 3rem;
   }
 }
 </style>

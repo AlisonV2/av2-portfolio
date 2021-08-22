@@ -8,7 +8,7 @@ form {
   width: 100%;
   max-width: auto;
   border: 1px solid $primary-lighter-50;
-  padding: 3vw;
+  padding: 3rem 3rem 2rem 3rem;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -28,10 +28,6 @@ form {
       background-color: transparent;
     }
   }
-}
-
-.input-rgpd {
-  margin-left: 0;
 }
 
 label.rgpd {

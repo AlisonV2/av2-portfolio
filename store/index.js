@@ -5,13 +5,13 @@ export const state = () => ({
 export const mutations = {
   setProjects(state, projects) {
     state.loadedProjects = projects;
-},
-viewProject(state, editedProject){
-  const projectIndex = state.loadedProjects.findIndex(
-      projects => projects.id === editedProject.id
-  );
-  state.loadedProjects[projectIndex] = editedProject;
-}
+  },
+  viewProject(state, editedProject){
+    const projectIndex = state.loadedProjects.findIndex(
+        projects => projects.id === editedProject.id
+    );
+    state.loadedProjects[projectIndex] = editedProject;
+  }
 };
 
 export const actions = {
@@ -27,21 +27,21 @@ export const actions = {
         })
         .catch(e => context.error(e));
 },
-setProjects(vuexContext, projects) {
-  vuexContext.commit('setProjects', projects);
-},
-viewProject(vuexContext, editedProject) {
-  return this.$axios
-      .$put('/posts/' + context.params.id, editedProject)
-      .then(result => {
-          vuexContext.commit('viewProject', editedProject)
-      })
-      .catch(e => console.log(e));
-},
+  setProjects(vuexContext, projects) {
+    vuexContext.commit('setProjects', projects);
+  },
+  viewProject(vuexContext, editedProject) {
+    return this.$axios
+        .$put('/posts/' + context.params.id, editedProject)
+        .then(result => {
+            vuexContext.commit('viewProject', editedProject)
+        })
+        .catch(e => console.log(e));
+  },
 };
 
 export const getters = {
   loadedProjects(state) {
     return state.loadedProjects;
-}
+  }
 };

@@ -4,7 +4,7 @@
         <Sidenav
           :show="displaySidenav"
           @closeSidenav="displaySidenav = false"/>
-        <main id="content-wrapper">
+        <main>
         <Nuxt />
         </main>
         <AppFooter />
@@ -32,8 +32,9 @@ export default {
 
 <style lang="scss">
 
-#content-wrapper {
-    margin-top: 3rem;
+main {
+    position: relative;
+    top: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,14 +42,14 @@ export default {
 }
 
 @include bp-up(lg){
-  #content-wrapper {
+  main {
     min-height: 70vh;
   }
 }
 
-@include bp-up(xl){
-  #content-wrapper {
-    overflow: hidden;
+@include bp-down(md) {
+  .scroll-container {
+    padding-bottom: 15rem;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container scroll-container">
     <div class="row">
       <div class="col-12">
         <AppHeader>
@@ -26,5 +26,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss"></style>
