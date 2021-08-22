@@ -61,7 +61,6 @@ export default {
 
 .input-rgpd {
   margin-bottom: 2rem;
-  margin-left: 0;
 }
 
 .rgpd-link {

@@ -1,6 +1,6 @@
 <template>
   <footer class="container fixed-bottom" :class="{ 'on-scroll': !topOfPage}">
-    <div class="row" id="#app-footer">
+    <div class="row">
       <div class="col-6 switcher">
         <div class="lang-switcher">
           <span>
@@ -58,7 +58,7 @@ footer {
     box-shadow: 0 0 1rem $accent;
   }
   .row {
-    padding: 1rem 1rem;
+    padding: .5rem 1rem;
   }
 }
 

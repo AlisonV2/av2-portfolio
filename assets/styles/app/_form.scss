@@ -1,6 +1,7 @@
 @include bp-up(md) {
   form {
     width: 80%;
+    padding: 3rem 3rem 2rem 3rem;
   }
 }
 
@@ -8,7 +9,7 @@ form {
   width: 100%;
   max-width: auto;
   border: 1px solid $primary-lighter-50;
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -33,6 +34,7 @@ form {
 label.rgpd {
   font-size: 1.8rem;
   color: $primary-lighter-50;
+  margin-left: 1rem;
 }
 
 .form-check .form-check-input {
