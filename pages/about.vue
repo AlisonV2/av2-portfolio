@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container scroll-container">
     <AppHeader>
       <template v-slot:pretitle>{{ $t("about.pretitle") }}</template>
       <template v-slot:title>{{ $t("about.title") }}</template>

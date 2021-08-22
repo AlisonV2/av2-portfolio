@@ -16,13 +16,6 @@ body {
   // overflow: hidden;
 }
 
-// Links
-.project-link {
-  @include link($light, $accent-font, $accent);
-  font-size: 2.5rem;
-  padding: 2rem;
-}
-
 // Layout
 .row {
   --bs-gutter-y: 1.5rem;

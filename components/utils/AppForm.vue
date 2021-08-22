@@ -64,8 +64,7 @@ export default {
 }
 
 .rgpd-link {
-  color: $accent !important;
-  font-family: $default-font;
+  @include link($accent, $default-font, $accent);
 }
 
 @include bp-down(md) {

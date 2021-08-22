@@ -25,10 +25,6 @@
   </p>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style lang="scss">
 .home-img {
   font-family: $default-font;
