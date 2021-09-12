@@ -95,14 +95,17 @@ export default {
 
   components: true,
 
-  buildModules: ["@nuxt/components", "@nuxtjs/style-resources", "@nuxtjs/pwa"],
+  buildModules: [
+    "@nuxt/components",
+    "@nuxtjs/style-resources",
+    "@nuxtjs/pwa",
+    "@nuxtjs/dotenv"
+  ],
 
   modules: [
-    '@nuxtjs/firebase',
-    "@nuxtjs/axios",
+    "@nuxtjs/firebase",
     "nuxt-i18n",
     "nuxt-purgecss",
-    "@nuxtjs/dotenv",
     "@nuxtjs/robots",
     "@nuxtjs/sitemap"
   ],
