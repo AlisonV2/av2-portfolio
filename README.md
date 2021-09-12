@@ -17,11 +17,10 @@ Licence: CC BY-NC-SA 4.0
 ## Dependencies
 
 - [nuxt-i18n](https://github.com/nuxt-community/i18n-module)
-- [axios](https://github.com/nuxt-community/axios-module)
+- [firestore](https://firebase.google.com/docs/firestore/quickstart)
 - [style resources](https://github.com/nuxt-community/style-resources-module)
 - [nuxt-dotenv](https://github.com/nuxt-community/dotenv-module)
 - [nuxt-sitemap](https://github.com/nuxt-community/sitemap-module)
-- [v-tooltip](https://github.com/Akryum/v-tooltip)
 - [vercel-builder](https://github.com/nuxt/vercel-builder)
 - [fontawesome](https://github.com/nuxt-community/fontawesome-module#readme)
 - [bootstrap](https://github.com/twbs/bootstrap)
