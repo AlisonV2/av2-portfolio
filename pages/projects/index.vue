@@ -8,21 +8,41 @@
         </AppHeader>
       </div>
     </div>
-    <ProjectList :projects="loadedProjects" />
+    <div class="row">
+    <div class="col-12 col-lg-6 col-xl-4 mb-4 project-cols" v-for="project in projects" :key="project.id">
+      <ProjectItem :project="project" />
+    </div>
+    </div>
   </div>
 </template>
 
 <script>
-import ProjectList from "@/components/projects/ProjectList";
+import { projectsCollection } from '@/plugins/firebase';
+import ProjectItem from "@/components/projects/ProjectItem";
 
 export default {
   components: {
-    ProjectList
+    ProjectItem
   },
-  computed: {
-    loadedProjects() {
-      return this.$store.getters.loadedProjects;
+  data() {
+    return {
+      projects: []
     }
+  },
+  async created() {
+    this.getProjects();
+  },
+  methods: {
+    async getProjects() {
+        const snap = await projectsCollection.orderBy('datePosted', 'desc').get();
+        this.projects = [];
+        snap.forEach((doc) => [
+          this.projects.push({
+            id: doc.id,
+            ...doc.data(),
+          }),
+        ]);
+      },
   }
 };
 </script>

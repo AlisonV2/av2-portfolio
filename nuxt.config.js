@@ -1,7 +1,6 @@
-require('dotenv').config();
+require("dotenv").config();
 
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "%s - Portfolio",
     title: "Alison Vandromme",
@@ -12,10 +11,11 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Alison Vandromme : Full stack web developper based in Bordeaux"
+        content:
+          "Alison Vandromme : Full stack web developper based in Bordeaux"
       },
       { name: "format-detection", content: "telephone=no" },
-      { name: "theme-color", content: "#1d1d1d"},
+      { name: "theme-color", content: "#1d1d1d" },
       {
         hid: "og:title",
         property: "og:title",
@@ -39,7 +39,8 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://res.cloudinary.com/dhlpkwga4/image/upload/v1629116246/M2_vvtvxa.jpg"
+        content:
+          "https://res.cloudinary.com/dhlpkwga4/image/upload/v1629116246/M2_vvtvxa.jpg"
       },
       {
         hid: "og:locale",
@@ -50,7 +51,7 @@ export default {
         hid: "og:locale:alternate",
         property: "og:locale:alternate",
         content: "fr_FR"
-      },
+      }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -75,45 +76,32 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    "~/assets/styles/app/app.scss"
-
-  ],
+  css: ["~/assets/styles/app/app.scss"],
 
   styleResources: {
-    scss: [
-      "@/assets/styles/global/global.scss"
-    ]
+    scss: ["@/assets/styles/global/global.scss"]
   },
 
-  loading: {color: "#49BFC7"},
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  loading: { color: "#49BFC7" },
+
   plugins: [
     {
       src: "~/plugins/bootstrap.js",
       mode: "client"
     },
     "~/plugins/core-components.js",
-    '~plugins/fontawesome.js'
+    "~/plugins/fontawesome.js",
+    "~/plugins/firebase.js"
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    "@nuxt/components",
-    '@nuxtjs/style-resources',
-    '@nuxtjs/pwa'
-  ],
+  buildModules: ["@nuxt/components", "@nuxtjs/style-resources", "@nuxtjs/pwa"],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "nuxt-i18n",
-    'nuxt-purgecss',
+    "nuxt-purgecss",
     "@nuxtjs/dotenv",
     "@nuxtjs/robots",
     "@nuxtjs/sitemap"
@@ -148,25 +136,18 @@ export default {
   },
 
   robots: {
-    UserAgent: '*',
-    Disallow: ''
+    UserAgent: "*",
+    Disallow: ""
   },
 
   router: {
     // easily spot nuxt-link without a trailing slash, because they will return a 404
     trailingSlash: true
   },
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    baseURL : process.env.BASE_URL ||process.env.API_URL,
-    credentials: false
-  },
 
   env: {
-    baseUrl: process.env.BASE_URL || process.env.API_URL,
-    firebaseApiKey: process.env.API_KEY,
+    baseUrl: process.env.BASE_URL
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
 };

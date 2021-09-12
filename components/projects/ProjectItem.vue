@@ -1,64 +1,27 @@
 <template>
-  <div class="col-12 col-lg-6 col-xl-4 mb-4 project-cols">
-    <nuxt-link :to="localePath('/projects/' + id)">
+    <nuxt-link :to="localePath('/projects/' + project.id)">
       <div class="content">
         <div class="content-overlay"></div>
-        <img class="content-image img-fluid" :alt="title" :src="thumbnail" />
+        <img class="content-image img-fluid" :alt="project.title" :src="project.thumbnail" />
         <div class="content-details fadeIn-top">
           <h5 class="content-title">
-            {{ title }}
+            {{ project.title }}
           </h5>
           <p class="content-text description" v-if="$i18n.locale === 'en'">
-            {{ previewEn }}
+            {{ project.preview.en }}
           </p>
           <p class="content-text description" v-if="$i18n.locale === 'fr'">
-            {{ previewFr }}
+            {{ project.preview.fr}}
           </p>
         </div>
       </div>
     </nuxt-link>
-  </div>
 </template>
 
 <script>
 export default {
-  name: "ProjectPreview",
-  props: {
-    id: {
-      type: String,
-      required: true
-    },
-    title: {
-      type: String
-    },
-    previewEn: {
-      type: String
-    },
-    previewFr: {
-      type: String
-    },
-    descriptionEn: {
-      type: String
-    },
-    descriptionFr: {
-      type: String
-    },
-    stack: {
-      type: String
-    },
-    thumbnail: {
-      type: String
-    },
-    dateEn: {
-      type: String
-    },
-    dateFr: {
-      type: String
-    },
-    liveLink: {
-      type: String
-    }
-  }
+  name: "ProjectItem",
+  props: ['project']
 };
 </script>
 
