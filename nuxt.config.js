@@ -91,14 +91,14 @@ export default {
     },
     "~/plugins/core-components.js",
     "~/plugins/fontawesome.js",
-    "~/plugins/firebase.js"
-  ],
+    ],
 
   components: true,
 
   buildModules: ["@nuxt/components", "@nuxtjs/style-resources", "@nuxtjs/pwa"],
 
   modules: [
+    '@nuxtjs/firebase',
     "@nuxtjs/axios",
     "nuxt-i18n",
     "nuxt-purgecss",
@@ -106,6 +106,20 @@ export default {
     "@nuxtjs/robots",
     "@nuxtjs/sitemap"
   ],
+
+  firebase: {
+    config: {
+      apiKey: process.env.FIREBASE_KEY,
+      authDomain: process.env.FIREBASE_DOMAIN,
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      storageBucket: process.env.FIREBASE_STORAGE,
+      messagingSenderId: process.env.FIREBASE_SENDER_ID,
+      appId: process.env.FIREBASE_APP_ID,
+    },
+    services: {
+      firestore: true,
+    }
+  },
 
   i18n: {
     locales: [

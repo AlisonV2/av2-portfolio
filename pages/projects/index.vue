@@ -17,7 +17,6 @@
 </template>
 
 <script>
-import { projectsCollection } from '@/plugins/firebase';
 import ProjectItem from "@/components/projects/ProjectItem";
 
 export default {
@@ -34,6 +33,7 @@ export default {
   },
   methods: {
     async getProjects() {
+        const projectsCollection = this.$fire.firestore.collection('projects');
         const snap = await projectsCollection.orderBy('datePosted', 'desc').get();
         this.projects = [];
         snap.forEach((doc) => [

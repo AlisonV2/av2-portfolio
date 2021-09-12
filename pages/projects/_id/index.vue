@@ -46,7 +46,6 @@
 </template>
 
 <script>
-import { projectsCollection } from "@/plugins/firebase";
 import BackLink from "@/components/projects/BackLink";
 
 export default {
@@ -77,6 +76,7 @@ export default {
     };
   },
   async mounted() {
+    const projectsCollection = this.$fire.firestore.collection('projects');
     const docSnapshot = await projectsCollection
       .doc(this.$route.params.id)
       .get();
