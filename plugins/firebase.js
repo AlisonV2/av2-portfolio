@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
@@ -9,8 +11,6 @@ const firebaseConfig = {
   messagingSenderId: process.env.FIREBASE_SENDER_ID,
   appId: process.env.FIREBASE_APP_ID,
 };
-
-console.log(firebaseConfig);
 
 firebase.initializeApp(firebaseConfig);
 
